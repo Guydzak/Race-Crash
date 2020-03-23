@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Obstacle
+  - Player1
+  - Player2
+  - Monster
   layers:
   - Default
   - TransparentFX
