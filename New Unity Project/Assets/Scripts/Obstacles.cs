@@ -24,7 +24,7 @@ public class Obstacles : MonoBehaviour
     {
         if (col.gameObject.tag == "Obstacle")
         {
-            rb2d.isKinematic = true;
+            
 
 
         }
