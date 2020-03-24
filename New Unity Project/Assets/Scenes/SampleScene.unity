@@ -399,6 +399,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+  G: {fileID: 0}
+  min: -10
+  max: -20
 --- !u!114 &138802995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3217,6 +3220,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+  G: {fileID: 0}
+  min: -10
+  max: -20
 --- !u!212 &1772690908
 SpriteRenderer:
   m_ObjectHideFlags: 0
