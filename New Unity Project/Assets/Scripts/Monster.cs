@@ -21,15 +21,18 @@ public class Monster : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        dP1 = Vector2.Distance(player1.transform.position, player2.transform.position);
-        dP2 = Vector2.Distance(player2.transform.position, player2.transform.position);
-        if(dP1 > dP2)
+        dP1 = Vector2.Distance(player1.transform.position, monster.transform.position);
+        Debug.Log("Distance of p1");
+        dP2 = Vector2.Distance(player2.transform.position, monster.transform.position);
+        Debug.Log("Distance of p2");
+        if (monster.transform.position.y > player1.transform.position.y && monster.transform.position.y > player2.transform.position.y)
         {
-            monster.transform.position = transform.position + new Vector3(transform.position.x, transform.position.y + 30f, transform.position.z);
-        }
-        if (dP2 > dP1)
-        {
-            monster.transform.position = transform.position + new Vector3(transform.position.x, transform.position.y + 30f, transform.position.z);
+            if(dP1 > dP2)
+            monster.transform.position = new Vector3(monster.transform.position.x, player2.transform.position.y + 10f, player2.transform.position.z);
+            else if(dP2 > dP1)
+            {
+                monster.transform.position = new Vector3(monster.transform.position.x, player1.transform.position.y + 10f, player1.transform.position.z);
+            }
         }
     }
 }
