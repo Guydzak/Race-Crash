@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Obstacles : MonoBehaviour
+public class Boundary : MonoBehaviour
 {
 
     protected Rigidbody2D rb2d;
@@ -31,7 +31,9 @@ public class Obstacles : MonoBehaviour
     }
 
 
-    void OnTriggerEnter2D(Collider2D col)
+
+
+    void OnCollisionEnter2D(Collision2D col)
     {
         hit = true;
         if (col.gameObject.tag == "Player1")
@@ -50,7 +52,7 @@ public class Obstacles : MonoBehaviour
         }
     }
 
-    void OnTriggerExit2D(Collider2D col)
+    void OnCollisionExit2D(Collision2D col)
     {
         hit = false;
         if (col.gameObject.tag == "Player1")
@@ -64,4 +66,8 @@ public class Obstacles : MonoBehaviour
             p2.max = -20f;
         }
     }
+
+
+
+
 }
