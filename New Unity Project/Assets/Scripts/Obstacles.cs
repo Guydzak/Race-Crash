@@ -34,21 +34,29 @@ public class Obstacles : MonoBehaviour
     void OnTriggerEnter2D(Collider2D col)
     {
         hit = true;
-        if (col.gameObject.tag == "Player1")
+        if (col.gameObject.tag == "Player1") // AND Player1 y ix greater than player2 y
         {
             Debug.Log("Closing in");
-            m.touch = true;
-            m.transform.position = new Vector3(m.transform.position.x, P1.transform.position.y + 7f , P1.transform.position.z);
             p1.min = -5f;
             p1.max = -5f;
+            if (m.dP2 > m.dP1)
+            {
+                m.touch = true;
+                m.transform.position = new Vector3(m.transform.position.x, P1.transform.position.y + 7f, P1.transform.position.z);
+            }
+            
         }
         else if (col.gameObject.tag == "Player2")
         {
             Debug.Log("Closing in");
-            m.touch = true;
-            m.transform.position = new Vector3(m.transform.position.x, P2.transform.position.y + 7f, P2.transform.position.z);
             p2.min = -5f;
             p2.max = -5f;
+            if (m.dP1 > m.dP2)
+            {
+                m.touch = true;
+                m.transform.position = new Vector3(m.transform.position.x, P2.transform.position.y + 7f, P2.transform.position.z);
+            }
+           
         }
     }
 
