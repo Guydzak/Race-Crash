@@ -12,6 +12,9 @@ public class Boundary : MonoBehaviour
     public Racer2 p2;
     Monster2 m;
 
+    public AudioClip boundaryPlayer1;
+    private AudioSource source1;
+
 
     // Start is called before the first frame update
     void Start()
@@ -21,6 +24,8 @@ public class Boundary : MonoBehaviour
         p1 = GameObject.FindGameObjectWithTag("Player1").GetComponent<Racer>();
         p2 = GameObject.FindGameObjectWithTag("Player2").GetComponent<Racer2>();
         m = GameObject.FindGameObjectWithTag("Monster").GetComponent<Monster2>();
+
+        source1 = GetComponent<AudioSource>();
 
     }
 
@@ -38,6 +43,7 @@ public class Boundary : MonoBehaviour
         hit = true;
         if (col.gameObject.tag == "Player1")
         {
+            source1.PlayOneShot(boundaryPlayer1, 1f);
             Debug.Log("Closing in");
             //m.transform.position = new Vector3(m.transform.position.x, P1.transform.position.y + 7f , P1.transform.position.z);
             p1.min = -5f;
