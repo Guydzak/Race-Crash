@@ -3541,6 +3541,7 @@ GameObject:
   - component: {fileID: 1282494739}
   - component: {fileID: 1282494738}
   - component: {fileID: 1282494737}
+  - component: {fileID: 1282494741}
   m_Layer: 0
   m_Name: Slime_0
   m_TagString: Monster
@@ -3555,7 +3556,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1282494736}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 87558644d0057e344ab2c8897045e76d, type: 3}
   m_Name: 
@@ -3644,6 +3645,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1282494741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1282494736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fdfd269ccd31d04b965ac6e7c43e466, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dP1: 0
+  dP2: 0
+  t: 3
+  touch: 0
 --- !u!1 &1305522775
 GameObject:
   m_ObjectHideFlags: 0

@@ -10,7 +10,7 @@ public class Obstacles : MonoBehaviour
     public bool hit = false;
     public Racer p1;
     public Racer2 p2;
-    Monster m;
+    Monster2 m;
 
 
     // Start is called before the first frame update
@@ -20,7 +20,7 @@ public class Obstacles : MonoBehaviour
         P2 = GameObject.FindGameObjectWithTag("Player2").GetComponent<Rigidbody2D>();
         p1 = GameObject.FindGameObjectWithTag("Player1").GetComponent<Racer>();
         p2 = GameObject.FindGameObjectWithTag("Player2").GetComponent<Racer2>();
-        m = GameObject.FindGameObjectWithTag("Monster").GetComponent<Monster>();
+        m = GameObject.FindGameObjectWithTag("Monster").GetComponent<Monster2>();
 
     }
 
@@ -37,14 +37,16 @@ public class Obstacles : MonoBehaviour
         if (col.gameObject.tag == "Player1")
         {
             Debug.Log("Closing in");
-            //m.transform.position = new Vector3(m.transform.position.x, P1.transform.position.y + 7f , P1.transform.position.z);
+            m.touch = true;
+            m.transform.position = new Vector3(m.transform.position.x, P1.transform.position.y + 7f , P1.transform.position.z);
             p1.min = -5f;
             p1.max = -5f;
         }
         else if (col.gameObject.tag == "Player2")
         {
             Debug.Log("Closing in");
-            //m.transform.position = new Vector3(m.transform.position.x, P2.transform.position.y + 7f, P2.transform.position.z);
+            m.touch = true;
+            m.transform.position = new Vector3(m.transform.position.x, P2.transform.position.y + 7f, P2.transform.position.z);
             p2.min = -5f;
             p2.max = -5f;
         }
@@ -55,11 +57,13 @@ public class Obstacles : MonoBehaviour
         hit = false;
         if (col.gameObject.tag == "Player1")
         {
+            m.touch = false;
             p1.min = -10f;
             p1.max = -20f;
         }
         else if (col.gameObject.tag == "Player2")
         {
+            m.touch = false;
             p2.min = -10f;
             p2.max = -20f;
         }

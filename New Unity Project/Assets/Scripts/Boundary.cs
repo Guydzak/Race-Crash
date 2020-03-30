@@ -10,7 +10,7 @@ public class Boundary : MonoBehaviour
     public bool hit = false;
     public Racer p1;
     public Racer2 p2;
-    Monster m;
+    Monster2 m;
 
 
     // Start is called before the first frame update
@@ -20,7 +20,7 @@ public class Boundary : MonoBehaviour
         P2 = GameObject.FindGameObjectWithTag("Player2").GetComponent<Rigidbody2D>();
         p1 = GameObject.FindGameObjectWithTag("Player1").GetComponent<Racer>();
         p2 = GameObject.FindGameObjectWithTag("Player2").GetComponent<Racer2>();
-        m = GameObject.FindGameObjectWithTag("Monster").GetComponent<Monster>();
+        m = GameObject.FindGameObjectWithTag("Monster").GetComponent<Monster2>();
 
     }
 
