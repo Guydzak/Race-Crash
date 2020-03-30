@@ -25,8 +25,13 @@ public class Boundary : MonoBehaviour
         p2 = GameObject.FindGameObjectWithTag("Player2").GetComponent<Racer2>();
         m = GameObject.FindGameObjectWithTag("Monster").GetComponent<Monster2>();
 
-        source1 = GetComponent<AudioSource>();
 
+
+    }
+
+    private void Awake()
+    {
+        source1 = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame

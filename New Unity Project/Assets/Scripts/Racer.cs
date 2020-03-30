@@ -7,12 +7,17 @@ public class Racer : MonoBehaviour
 
     public float speed = 1f; //Speed can be changed from the inspector.
     public Rigidbody2D G;
-    public float min, max; 
+    public float min, max;
+
+    public AudioClip drivingPlayer1;
+    private AudioSource source1;
 
 
     void Start()
     {
         G = GameObject.FindGameObjectWithTag("Player1").GetComponent<Rigidbody2D>();
+        source1 = GetComponent<AudioSource>();
+        source1.PlayOneShot(drivingPlayer1, 4f);
     }
     // Update is called once per frame
     void Update()
