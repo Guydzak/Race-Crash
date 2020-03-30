@@ -21,6 +21,10 @@ public class Monster : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //The only thing you need to worry about is the y postion of both players.
+        // Compare them, and then save the player object of the one behind, and only look at that
+        // Get player speed in the y axis
+        // Figure out max and min speed, use the difference between the max speed to figure out the distance of the monster
         dP1 = Vector2.Distance(player1.transform.position, monster.transform.position);
         Debug.Log("Distance of p1");
         dP2 = Vector2.Distance(player2.transform.position, monster.transform.position);
