@@ -13,6 +13,7 @@ public class Boundary : MonoBehaviour
     Monster2 m;
 
     public AudioClip boundaryPlayer1;
+    public AudioClip boundaryPlayer2;
     private AudioSource source1;
 
 
@@ -56,6 +57,7 @@ public class Boundary : MonoBehaviour
         }
         else if (col.gameObject.tag == "Player2")
         {
+            source1.PlayOneShot(boundaryPlayer2, 1f);
             Debug.Log("Closing in");
             //m.transform.position = new Vector3(m.transform.position.x, P2.transform.position.y + 7f, P2.transform.position.z);
             p2.min = -5f;

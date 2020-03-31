@@ -1116,6 +1116,7 @@ MonoBehaviour:
   p1: {fileID: 0}
   p2: {fileID: 0}
   boundaryPlayer1: {fileID: 8300000, guid: a2220328d9516ba4a81ed0b32c947784, type: 3}
+  boundaryPlayer2: {fileID: 8300000, guid: 583ed0daa34dc974b923681226cbbdc6, type: 3}
 --- !u!82 &240749755
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1126,11 +1127,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: a2220328d9516ba4a81ed0b32c947784, type: 3}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -2273,6 +2274,7 @@ MonoBehaviour:
   p1: {fileID: 0}
   p2: {fileID: 0}
   boundaryPlayer1: {fileID: 8300000, guid: a2220328d9516ba4a81ed0b32c947784, type: 3}
+  boundaryPlayer2: {fileID: 8300000, guid: 583ed0daa34dc974b923681226cbbdc6, type: 3}
 --- !u!82 &571220279
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2283,11 +2285,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: a2220328d9516ba4a81ed0b32c947784, type: 3}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -3027,6 +3029,7 @@ MonoBehaviour:
   p1: {fileID: 0}
   p2: {fileID: 0}
   boundaryPlayer1: {fileID: 8300000, guid: a2220328d9516ba4a81ed0b32c947784, type: 3}
+  boundaryPlayer2: {fileID: 8300000, guid: 583ed0daa34dc974b923681226cbbdc6, type: 3}
 --- !u!82 &676229014
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3037,11 +3040,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: a2220328d9516ba4a81ed0b32c947784, type: 3}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -3409,6 +3412,7 @@ MonoBehaviour:
   p1: {fileID: 0}
   p2: {fileID: 0}
   boundaryPlayer1: {fileID: 8300000, guid: a2220328d9516ba4a81ed0b32c947784, type: 3}
+  boundaryPlayer2: {fileID: 8300000, guid: 583ed0daa34dc974b923681226cbbdc6, type: 3}
 --- !u!82 &764388520
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3419,11 +3423,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: a2220328d9516ba4a81ed0b32c947784, type: 3}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -3720,6 +3724,7 @@ MonoBehaviour:
   p1: {fileID: 0}
   p2: {fileID: 0}
   boundaryPlayer1: {fileID: 8300000, guid: a2220328d9516ba4a81ed0b32c947784, type: 3}
+  boundaryPlayer2: {fileID: 8300000, guid: 583ed0daa34dc974b923681226cbbdc6, type: 3}
 --- !u!82 &851658293
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3730,11 +3735,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: a2220328d9516ba4a81ed0b32c947784, type: 3}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -4107,6 +4112,7 @@ MonoBehaviour:
   p1: {fileID: 0}
   p2: {fileID: 0}
   boundaryPlayer1: {fileID: 8300000, guid: a2220328d9516ba4a81ed0b32c947784, type: 3}
+  boundaryPlayer2: {fileID: 8300000, guid: 583ed0daa34dc974b923681226cbbdc6, type: 3}
 --- !u!82 &893667684
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4117,11 +4123,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: a2220328d9516ba4a81ed0b32c947784, type: 3}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -5989,6 +5995,7 @@ MonoBehaviour:
   p1: {fileID: 0}
   p2: {fileID: 0}
   boundaryPlayer1: {fileID: 8300000, guid: a2220328d9516ba4a81ed0b32c947784, type: 3}
+  boundaryPlayer2: {fileID: 8300000, guid: 583ed0daa34dc974b923681226cbbdc6, type: 3}
 --- !u!82 &1452954214
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5999,11 +6006,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: a2220328d9516ba4a81ed0b32c947784, type: 3}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -7416,6 +7423,7 @@ MonoBehaviour:
   p1: {fileID: 0}
   p2: {fileID: 0}
   boundaryPlayer1: {fileID: 8300000, guid: a2220328d9516ba4a81ed0b32c947784, type: 3}
+  boundaryPlayer2: {fileID: 8300000, guid: 583ed0daa34dc974b923681226cbbdc6, type: 3}
 --- !u!82 &1894280432
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7426,11 +7434,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: a2220328d9516ba4a81ed0b32c947784, type: 3}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
