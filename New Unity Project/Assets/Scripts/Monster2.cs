@@ -9,22 +9,29 @@ public class Monster2 : MonoBehaviour
     GameObject monster;
 
     public float dP1, dP2;
-    public int t;
-    Obstacles O;
+    public Obstacles O;
     public bool touch = false;
+    public int T;
+
+    public AudioSource source;
+    public AudioClip Roar;
 
 
 
 
     // Start is called before the first frame update
+    void Awake()
+    {
+        source = GetComponent<AudioSource>();
+    }
+
     void Start()
     {
         player1 = GameObject.FindGameObjectWithTag("Player1");
         player2 = GameObject.FindGameObjectWithTag("Player2");
         monster = GameObject.FindGameObjectWithTag("Monster");
-        O = GameObject.FindGameObjectWithTag("Obstacle").GetComponent<Obstacles>();
-
-
+        //O = GameObject.FindGameObjectWithTag("Obstacle").GetComponent<Obstacles>();
+        
     }
 
     // Update is called once per frame
@@ -38,16 +45,22 @@ public class Monster2 : MonoBehaviour
             {
 
                 monster.transform.position = new Vector3(monster.transform.position.x, player2.transform.position.y + 10f, player2.transform.position.z);
+                
             }
+            
 
-            if (dP2 > dP1 && touch == false)
+
+                if (dP2 > dP1 && touch == false)
             {
-
                 monster.transform.position = new Vector3(monster.transform.position.x, player1.transform.position.y + 10f, player1.transform.position.z);
             }
+            
+
 
         }
     }
+
+    
 
 
 

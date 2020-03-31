@@ -17,7 +17,7 @@ public class Racer : MonoBehaviour
     {
         G = GameObject.FindGameObjectWithTag("Player1").GetComponent<Rigidbody2D>();
         source1 = GetComponent<AudioSource>();
-        source1.PlayOneShot(drivingPlayer1, 4f);
+        source1.PlayOneShot(drivingPlayer1, 1f);
     }
     // Update is called once per frame
     void Update()

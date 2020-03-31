@@ -12,6 +12,9 @@ public class Obstacles : MonoBehaviour
     public Racer2 p2;
     Monster2 m;
 
+    private AudioSource source;
+    public AudioClip bush;
+
 
     // Start is called before the first frame update
     void Start()
@@ -21,6 +24,7 @@ public class Obstacles : MonoBehaviour
         p1 = GameObject.FindGameObjectWithTag("Player1").GetComponent<Racer>();
         p2 = GameObject.FindGameObjectWithTag("Player2").GetComponent<Racer2>();
         m = GameObject.FindGameObjectWithTag("Monster").GetComponent<Monster2>();
+        source = GetComponent<AudioSource>();
 
     }
 
@@ -43,11 +47,13 @@ public class Obstacles : MonoBehaviour
             {
                 m.touch = true;
                 m.transform.position = new Vector3(m.transform.position.x, P1.transform.position.y + 7f, P1.transform.position.z);
+                m.source.PlayOneShot(m.Roar, 0.2f);
             }
             
         }
         else if (col.gameObject.tag == "Player2")
         {
+            source.PlayOneShot(bush, 0.3f);
             Debug.Log("Closing in");
             p2.min = -5f;
             p2.max = -5f;
@@ -55,6 +61,7 @@ public class Obstacles : MonoBehaviour
             {
                 m.touch = true;
                 m.transform.position = new Vector3(m.transform.position.x, P2.transform.position.y + 7f, P2.transform.position.z);
+                m.source.PlayOneShot(m.Roar, 0.2f);
             }
            
         }
