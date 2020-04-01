@@ -683,7 +683,7 @@ MonoBehaviour:
   p1: {fileID: 138802994}
   p2: {fileID: 1772690907}
   bush: {fileID: 0}
-  playerOneBush: {fileID: 0}
+  playerOneBush: {fileID: 8300000, guid: efcc5637b4ea30d418af5aead918f471, type: 3}
 --- !u!61 &138802996
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1238,6 +1238,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crash: {fileID: 8300000, guid: ed45523ff4f149f4c958c80e31588e62, type: 3}
+  crashPlayerOne: {fileID: 8300000, guid: 2f454d97e7c493146a0d8705adf0d1a8, type: 3}
 --- !u!1001 &263359963
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1737,6 +1738,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crash: {fileID: 8300000, guid: ed45523ff4f149f4c958c80e31588e62, type: 3}
+  crashPlayerOne: {fileID: 8300000, guid: 2f454d97e7c493146a0d8705adf0d1a8, type: 3}
 --- !u!1 &373745801 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2429151278900244719, guid: 4d58de3578f8b1146924d2f206a4ba2f,
@@ -1756,6 +1758,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crash: {fileID: 8300000, guid: ed45523ff4f149f4c958c80e31588e62, type: 3}
+  crashPlayerOne: {fileID: 8300000, guid: 2f454d97e7c493146a0d8705adf0d1a8, type: 3}
 --- !u!1 &390616405
 GameObject:
   m_ObjectHideFlags: 0
@@ -1867,6 +1870,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crash: {fileID: 8300000, guid: ed45523ff4f149f4c958c80e31588e62, type: 3}
+  crashPlayerOne: {fileID: 8300000, guid: 2f454d97e7c493146a0d8705adf0d1a8, type: 3}
 --- !u!1 &480505925
 GameObject:
   m_ObjectHideFlags: 0
@@ -3861,6 +3865,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crash: {fileID: 8300000, guid: ed45523ff4f149f4c958c80e31588e62, type: 3}
+  crashPlayerOne: {fileID: 8300000, guid: 2f454d97e7c493146a0d8705adf0d1a8, type: 3}
 --- !u!1001 &865949686
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4665,6 +4670,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crash: {fileID: 8300000, guid: ed45523ff4f149f4c958c80e31588e62, type: 3}
+  crashPlayerOne: {fileID: 8300000, guid: 2f454d97e7c493146a0d8705adf0d1a8, type: 3}
 --- !u!1001 &1182167880
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5577,6 +5583,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crash: {fileID: 8300000, guid: ed45523ff4f149f4c958c80e31588e62, type: 3}
+  crashPlayerOne: {fileID: 8300000, guid: 2f454d97e7c493146a0d8705adf0d1a8, type: 3}
 --- !u!1 &1383937065
 GameObject:
   m_ObjectHideFlags: 0
@@ -6321,6 +6328,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crash: {fileID: 8300000, guid: ed45523ff4f149f4c958c80e31588e62, type: 3}
+  crashPlayerOne: {fileID: 8300000, guid: 2f454d97e7c493146a0d8705adf0d1a8, type: 3}
 --- !u!1 &1555809882 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7623249636766412796, guid: e4308436c37a0d4499bfd4f5d16b0079,
@@ -7148,6 +7156,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crash: {fileID: 8300000, guid: ed45523ff4f149f4c958c80e31588e62, type: 3}
+  crashPlayerOne: {fileID: 8300000, guid: 2f454d97e7c493146a0d8705adf0d1a8, type: 3}
 --- !u!4 &1866684124 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2429151278900244712, guid: 4d58de3578f8b1146924d2f206a4ba2f,
@@ -7575,6 +7584,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crash: {fileID: 8300000, guid: ed45523ff4f149f4c958c80e31588e62, type: 3}
+  crashPlayerOne: {fileID: 8300000, guid: 2f454d97e7c493146a0d8705adf0d1a8, type: 3}
 --- !u!1001 &1942104706
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8091,6 +8101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crash: {fileID: 8300000, guid: ed45523ff4f149f4c958c80e31588e62, type: 3}
+  crashPlayerOne: {fileID: 8300000, guid: 2f454d97e7c493146a0d8705adf0d1a8, type: 3}
 --- !u!1001 &554670873374940052
 PrefabInstance:
   m_ObjectHideFlags: 0
