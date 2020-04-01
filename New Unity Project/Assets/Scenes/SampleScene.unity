@@ -660,6 +660,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 748452665}
+  - {fileID: 1514888700}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
@@ -698,6 +699,7 @@ MonoBehaviour:
   bush: {fileID: 0}
   playerOneBush: {fileID: 8300000, guid: efcc5637b4ea30d418af5aead918f471, type: 3}
   almostThere: {fileID: 0}
+  closeOne: {fileID: 0}
 --- !u!61 &138802996
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1253,6 +1255,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   crash: {fileID: 8300000, guid: ed45523ff4f149f4c958c80e31588e62, type: 3}
   crashPlayerOne: {fileID: 8300000, guid: 2f454d97e7c493146a0d8705adf0d1a8, type: 3}
+  howDareYou: {fileID: 8300000, guid: dce2ee7c05e74814398f736aa3828f6d, type: 3}
 --- !u!1001 &263359963
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1761,6 +1764,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   crash: {fileID: 8300000, guid: ed45523ff4f149f4c958c80e31588e62, type: 3}
   crashPlayerOne: {fileID: 8300000, guid: 2f454d97e7c493146a0d8705adf0d1a8, type: 3}
+  howDareYou: {fileID: 8300000, guid: dce2ee7c05e74814398f736aa3828f6d, type: 3}
 --- !u!1 &373745801 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2429151278900244719, guid: 4d58de3578f8b1146924d2f206a4ba2f,
@@ -1781,6 +1785,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   crash: {fileID: 8300000, guid: ed45523ff4f149f4c958c80e31588e62, type: 3}
   crashPlayerOne: {fileID: 8300000, guid: 2f454d97e7c493146a0d8705adf0d1a8, type: 3}
+  howDareYou: {fileID: 8300000, guid: dce2ee7c05e74814398f736aa3828f6d, type: 3}
 --- !u!1 &390616405
 GameObject:
   m_ObjectHideFlags: 0
@@ -1893,6 +1898,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   crash: {fileID: 8300000, guid: ed45523ff4f149f4c958c80e31588e62, type: 3}
   crashPlayerOne: {fileID: 8300000, guid: 2f454d97e7c493146a0d8705adf0d1a8, type: 3}
+  howDareYou: {fileID: 8300000, guid: dce2ee7c05e74814398f736aa3828f6d, type: 3}
 --- !u!1 &480505925
 GameObject:
   m_ObjectHideFlags: 0
@@ -3901,6 +3907,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   crash: {fileID: 8300000, guid: ed45523ff4f149f4c958c80e31588e62, type: 3}
   crashPlayerOne: {fileID: 8300000, guid: 2f454d97e7c493146a0d8705adf0d1a8, type: 3}
+  howDareYou: {fileID: 8300000, guid: dce2ee7c05e74814398f736aa3828f6d, type: 3}
 --- !u!1001 &865949686
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4727,6 +4734,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   crash: {fileID: 8300000, guid: ed45523ff4f149f4c958c80e31588e62, type: 3}
   crashPlayerOne: {fileID: 8300000, guid: 2f454d97e7c493146a0d8705adf0d1a8, type: 3}
+  howDareYou: {fileID: 8300000, guid: dce2ee7c05e74814398f736aa3828f6d, type: 3}
 --- !u!1001 &1182167880
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5271,6 +5279,7 @@ MonoBehaviour:
   T: 4
   source: {fileID: 0}
   Roar: {fileID: 8300000, guid: 9b15d6bd2e7e0174194261da75dacf64, type: 3}
+  closeOne: {fileID: 8300000, guid: e33c711df3ef1cf48936b6a2c3615239, type: 3}
 --- !u!82 &1282494742
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5648,6 +5657,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   crash: {fileID: 8300000, guid: ed45523ff4f149f4c958c80e31588e62, type: 3}
   crashPlayerOne: {fileID: 8300000, guid: 2f454d97e7c493146a0d8705adf0d1a8, type: 3}
+  howDareYou: {fileID: 8300000, guid: dce2ee7c05e74814398f736aa3828f6d, type: 3}
 --- !u!1 &1383937065
 GameObject:
   m_ObjectHideFlags: 0
@@ -6381,6 +6391,133 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 554670873374940052}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1514888699
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1514888700}
+  - component: {fileID: 1514888701}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1514888700
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1514888699}
+  m_LocalRotation: {x: 0, y: -0, z: -1, w: 0}
+  m_LocalPosition: {x: -9.1563635, y: -1.4669876, z: -5244.832}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 138802993}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1514888701
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1514888699}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 9f3ec70e595b59c41b4625385d9155f8, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1519873406 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2429151278900244719, guid: 4d58de3578f8b1146924d2f206a4ba2f,
@@ -6401,6 +6538,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   crash: {fileID: 8300000, guid: ed45523ff4f149f4c958c80e31588e62, type: 3}
   crashPlayerOne: {fileID: 8300000, guid: 2f454d97e7c493146a0d8705adf0d1a8, type: 3}
+  howDareYou: {fileID: 8300000, guid: dce2ee7c05e74814398f736aa3828f6d, type: 3}
 --- !u!1 &1555809882 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7623249636766412796, guid: e4308436c37a0d4499bfd4f5d16b0079,
@@ -7229,6 +7367,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   crash: {fileID: 8300000, guid: ed45523ff4f149f4c958c80e31588e62, type: 3}
   crashPlayerOne: {fileID: 8300000, guid: 2f454d97e7c493146a0d8705adf0d1a8, type: 3}
+  howDareYou: {fileID: 8300000, guid: dce2ee7c05e74814398f736aa3828f6d, type: 3}
 --- !u!4 &1866684124 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2429151278900244712, guid: 4d58de3578f8b1146924d2f206a4ba2f,
@@ -7657,6 +7796,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   crash: {fileID: 8300000, guid: ed45523ff4f149f4c958c80e31588e62, type: 3}
   crashPlayerOne: {fileID: 8300000, guid: 2f454d97e7c493146a0d8705adf0d1a8, type: 3}
+  howDareYou: {fileID: 8300000, guid: dce2ee7c05e74814398f736aa3828f6d, type: 3}
 --- !u!1001 &1942104706
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8190,6 +8330,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   crash: {fileID: 8300000, guid: ed45523ff4f149f4c958c80e31588e62, type: 3}
   crashPlayerOne: {fileID: 8300000, guid: 2f454d97e7c493146a0d8705adf0d1a8, type: 3}
+  howDareYou: {fileID: 8300000, guid: dce2ee7c05e74814398f736aa3828f6d, type: 3}
 --- !u!1001 &554670873374940052
 PrefabInstance:
   m_ObjectHideFlags: 0

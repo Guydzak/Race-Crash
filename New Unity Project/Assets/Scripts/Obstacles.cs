@@ -16,6 +16,7 @@ public class Obstacles : MonoBehaviour
     public AudioClip bush;
     public AudioClip playerOneBush;
     public AudioClip almostThere;
+    public AudioClip closeOne;
 
 
     // Start is called before the first frame update
@@ -52,6 +53,7 @@ public class Obstacles : MonoBehaviour
                 m.touch = true;
                 m.transform.position = new Vector3(m.transform.position.x, P1.transform.position.y + 7f, P1.transform.position.z);
                 m.source.PlayOneShot(m.Roar, 0.2f);
+                m.source.PlayOneShot(m.closeOne, 1f);
             }
             
         }
@@ -66,6 +68,7 @@ public class Obstacles : MonoBehaviour
                 m.touch = true;
                 m.transform.position = new Vector3(m.transform.position.x, P2.transform.position.y + 7f, P2.transform.position.z);
                 m.source.PlayOneShot(m.Roar, 0.2f);
+
             }
            
         }
