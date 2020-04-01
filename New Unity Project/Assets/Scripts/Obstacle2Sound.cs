@@ -19,6 +19,7 @@ public class Obstacle2Sound : MonoBehaviour
         if(col.gameObject.tag == "Player1")
         {
             source.PlayOneShot(crashPlayerOne, 1f);
+
         }
 
         if (col.gameObject.tag == "Player2")

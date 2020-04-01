@@ -549,6 +549,11 @@ PrefabInstance:
       propertyPath: bush
       value: 
       objectReference: {fileID: 8300000, guid: c4d9c2964b157b14d9b9a31b004c1da5, type: 3}
+    - target: {fileID: 1025007463759772553, guid: e4308436c37a0d4499bfd4f5d16b0079,
+        type: 3}
+      propertyPath: playerOneBush
+      value: 
+      objectReference: {fileID: 8300000, guid: efcc5637b4ea30d418af5aead918f471, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4308436c37a0d4499bfd4f5d16b0079, type: 3}
 --- !u!1 &138802990
@@ -692,6 +697,7 @@ MonoBehaviour:
   p2: {fileID: 1772690907}
   bush: {fileID: 0}
   playerOneBush: {fileID: 8300000, guid: efcc5637b4ea30d418af5aead918f471, type: 3}
+  almostThere: {fileID: 0}
 --- !u!61 &138802996
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2185,6 +2191,11 @@ PrefabInstance:
       propertyPath: bush
       value: 
       objectReference: {fileID: 8300000, guid: c4d9c2964b157b14d9b9a31b004c1da5, type: 3}
+    - target: {fileID: 1025007463759772553, guid: e4308436c37a0d4499bfd4f5d16b0079,
+        type: 3}
+      propertyPath: playerOneBush
+      value: 
+      objectReference: {fileID: 8300000, guid: efcc5637b4ea30d418af5aead918f471, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4308436c37a0d4499bfd4f5d16b0079, type: 3}
 --- !u!1 &571220273
@@ -4603,6 +4614,11 @@ PrefabInstance:
       propertyPath: playerOneBush
       value: 
       objectReference: {fileID: 8300000, guid: efcc5637b4ea30d418af5aead918f471, type: 3}
+    - target: {fileID: 1468445853434564380, guid: fb00f4fdd0c65274f9d900e56c4adb62,
+        type: 3}
+      propertyPath: almostThere
+      value: 
+      objectReference: {fileID: 8300000, guid: f073cf13cabe2634084457be061d8792, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb00f4fdd0c65274f9d900e56c4adb62, type: 3}
 --- !u!4 &1013583785 stripped
