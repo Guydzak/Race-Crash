@@ -59,6 +59,7 @@ public class Obstacles : MonoBehaviour
         }
         else if (col.gameObject.tag == "Player2")
         {
+            source.PlayOneShot(almostThere, 1f);
             source.PlayOneShot(bush, 0.3f);
             Debug.Log("Closing in");
             p2.min = -5f;
@@ -68,6 +69,7 @@ public class Obstacles : MonoBehaviour
                 m.touch = true;
                 m.transform.position = new Vector3(m.transform.position.x, P2.transform.position.y + 7f, P2.transform.position.z);
                 m.source.PlayOneShot(m.Roar, 0.2f);
+                m.source.PlayOneShot(m.friendly, 01f);
 
             }
            

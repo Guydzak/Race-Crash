@@ -14,6 +14,7 @@ public class Boundary : MonoBehaviour
 
     public AudioClip boundaryPlayer1;
     public AudioClip boundaryPlayer2;
+    public AudioClip ouch;
     private AudioSource source1;
 
 
@@ -57,6 +58,7 @@ public class Boundary : MonoBehaviour
         }
         else if (col.gameObject.tag == "Player2")
         {
+            source1.PlayOneShot(ouch, 0.5f);
             source1.PlayOneShot(boundaryPlayer2, 1f);
             Debug.Log("Closing in");
             //m.transform.position = new Vector3(m.transform.position.x, P2.transform.position.y + 7f, P2.transform.position.z);

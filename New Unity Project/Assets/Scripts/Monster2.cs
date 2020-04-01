@@ -16,6 +16,7 @@ public class Monster2 : MonoBehaviour
     public AudioSource source;
     public AudioClip Roar;
     public AudioClip closeOne;
+    public AudioClip friendly;
 
 
 

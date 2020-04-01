@@ -8,6 +8,7 @@ public class Obstacle2Sound : MonoBehaviour
     public AudioClip crash;
     public AudioClip crashPlayerOne;
     public AudioClip howDareYou;
+    public AudioClip keepTrying;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +28,7 @@ public class Obstacle2Sound : MonoBehaviour
         if (col.gameObject.tag == "Player2")
         {
             source.PlayOneShot(crash, 0.5f);
+            source.PlayOneShot(keepTrying, 1f);
         }
     }
 }
