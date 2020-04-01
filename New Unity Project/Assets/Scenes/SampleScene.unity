@@ -303,7 +303,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: efcc5637b4ea30d418af5aead918f471, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -683,6 +683,7 @@ MonoBehaviour:
   p1: {fileID: 138802994}
   p2: {fileID: 1772690907}
   bush: {fileID: 0}
+  playerOneBush: {fileID: 0}
 --- !u!61 &138802996
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -727,7 +728,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 46
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -821,7 +822,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: efcc5637b4ea30d418af5aead918f471, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -979,6 +980,11 @@ PrefabInstance:
       propertyPath: bush
       value: 
       objectReference: {fileID: 8300000, guid: c4d9c2964b157b14d9b9a31b004c1da5, type: 3}
+    - target: {fileID: 1025007463759772553, guid: e4308436c37a0d4499bfd4f5d16b0079,
+        type: 3}
+      propertyPath: playerOneBush
+      value: 
+      objectReference: {fileID: 8300000, guid: efcc5637b4ea30d418af5aead918f471, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4308436c37a0d4499bfd4f5d16b0079, type: 3}
 --- !u!4 &222519539 stripped
@@ -1304,6 +1310,11 @@ PrefabInstance:
       propertyPath: bush
       value: 
       objectReference: {fileID: 8300000, guid: c4d9c2964b157b14d9b9a31b004c1da5, type: 3}
+    - target: {fileID: 7896325655456230027, guid: 74b8144679352984da2c7131da474311,
+        type: 3}
+      propertyPath: playerOneBush
+      value: 
+      objectReference: {fileID: 8300000, guid: efcc5637b4ea30d418af5aead918f471, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74b8144679352984da2c7131da474311, type: 3}
 --- !u!1 &267004553
@@ -2001,6 +2012,11 @@ PrefabInstance:
       propertyPath: bush
       value: 
       objectReference: {fileID: 8300000, guid: c4d9c2964b157b14d9b9a31b004c1da5, type: 3}
+    - target: {fileID: 1025007463759772553, guid: e4308436c37a0d4499bfd4f5d16b0079,
+        type: 3}
+      propertyPath: playerOneBush
+      value: 
+      objectReference: {fileID: 8300000, guid: efcc5637b4ea30d418af5aead918f471, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4308436c37a0d4499bfd4f5d16b0079, type: 3}
 --- !u!1 &519420028
@@ -2505,7 +2521,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: efcc5637b4ea30d418af5aead918f471, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -2743,6 +2759,11 @@ PrefabInstance:
       propertyPath: bush
       value: 
       objectReference: {fileID: 8300000, guid: c4d9c2964b157b14d9b9a31b004c1da5, type: 3}
+    - target: {fileID: 7896325655456230027, guid: 74b8144679352984da2c7131da474311,
+        type: 3}
+      propertyPath: playerOneBush
+      value: 
+      objectReference: {fileID: 8300000, guid: efcc5637b4ea30d418af5aead918f471, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74b8144679352984da2c7131da474311, type: 3}
 --- !u!1 &649090435
@@ -4532,6 +4553,11 @@ PrefabInstance:
       propertyPath: bush
       value: 
       objectReference: {fileID: 8300000, guid: c4d9c2964b157b14d9b9a31b004c1da5, type: 3}
+    - target: {fileID: 1468445853434564380, guid: fb00f4fdd0c65274f9d900e56c4adb62,
+        type: 3}
+      propertyPath: playerOneBush
+      value: 
+      objectReference: {fileID: 8300000, guid: efcc5637b4ea30d418af5aead918f471, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb00f4fdd0c65274f9d900e56c4adb62, type: 3}
 --- !u!4 &1013583785 stripped
@@ -4939,6 +4965,11 @@ PrefabInstance:
       propertyPath: bush
       value: 
       objectReference: {fileID: 8300000, guid: c4d9c2964b157b14d9b9a31b004c1da5, type: 3}
+    - target: {fileID: 1468445853434564380, guid: fb00f4fdd0c65274f9d900e56c4adb62,
+        type: 3}
+      propertyPath: playerOneBush
+      value: 
+      objectReference: {fileID: 8300000, guid: efcc5637b4ea30d418af5aead918f471, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb00f4fdd0c65274f9d900e56c4adb62, type: 3}
 --- !u!4 &1274095509 stripped
@@ -4963,7 +4994,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: efcc5637b4ea30d418af5aead918f471, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -5418,6 +5449,11 @@ PrefabInstance:
       propertyPath: bush
       value: 
       objectReference: {fileID: 8300000, guid: c4d9c2964b157b14d9b9a31b004c1da5, type: 3}
+    - target: {fileID: 1468445853434564380, guid: fb00f4fdd0c65274f9d900e56c4adb62,
+        type: 3}
+      propertyPath: playerOneBush
+      value: 
+      objectReference: {fileID: 8300000, guid: efcc5637b4ea30d418af5aead918f471, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb00f4fdd0c65274f9d900e56c4adb62, type: 3}
 --- !u!1 &1345043492 stripped
@@ -5436,7 +5472,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: efcc5637b4ea30d418af5aead918f471, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -5637,7 +5673,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: efcc5637b4ea30d418af5aead918f471, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -6174,7 +6210,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: efcc5637b4ea30d418af5aead918f471, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -6649,7 +6685,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: efcc5637b4ea30d418af5aead918f471, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -7001,7 +7037,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: efcc5637b4ea30d418af5aead918f471, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -7134,7 +7170,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: efcc5637b4ea30d418af5aead918f471, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -7766,6 +7802,11 @@ PrefabInstance:
       propertyPath: bush
       value: 
       objectReference: {fileID: 8300000, guid: c4d9c2964b157b14d9b9a31b004c1da5, type: 3}
+    - target: {fileID: 1025007463759772553, guid: e4308436c37a0d4499bfd4f5d16b0079,
+        type: 3}
+      propertyPath: playerOneBush
+      value: 
+      objectReference: {fileID: 8300000, guid: efcc5637b4ea30d418af5aead918f471, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4308436c37a0d4499bfd4f5d16b0079, type: 3}
 --- !u!1001 &2054215536
@@ -7945,7 +7986,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: efcc5637b4ea30d418af5aead918f471, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -8122,6 +8163,11 @@ PrefabInstance:
       propertyPath: bush
       value: 
       objectReference: {fileID: 8300000, guid: c4d9c2964b157b14d9b9a31b004c1da5, type: 3}
+    - target: {fileID: 1468445853434564380, guid: fb00f4fdd0c65274f9d900e56c4adb62,
+        type: 3}
+      propertyPath: playerOneBush
+      value: 
+      objectReference: {fileID: 8300000, guid: efcc5637b4ea30d418af5aead918f471, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb00f4fdd0c65274f9d900e56c4adb62, type: 3}
 --- !u!1001 &2429151277706663037
@@ -8265,6 +8311,11 @@ PrefabInstance:
       propertyPath: bush
       value: 
       objectReference: {fileID: 8300000, guid: c4d9c2964b157b14d9b9a31b004c1da5, type: 3}
+    - target: {fileID: 7896325655456230027, guid: 74b8144679352984da2c7131da474311,
+        type: 3}
+      propertyPath: playerOneBush
+      value: 
+      objectReference: {fileID: 8300000, guid: efcc5637b4ea30d418af5aead918f471, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74b8144679352984da2c7131da474311, type: 3}
 --- !u!1001 &7344385462852139334
@@ -8408,5 +8459,10 @@ PrefabInstance:
       propertyPath: bush
       value: 
       objectReference: {fileID: 8300000, guid: c4d9c2964b157b14d9b9a31b004c1da5, type: 3}
+    - target: {fileID: 1025007463759772553, guid: e4308436c37a0d4499bfd4f5d16b0079,
+        type: 3}
+      propertyPath: playerOneBush
+      value: 
+      objectReference: {fileID: 8300000, guid: efcc5637b4ea30d418af5aead918f471, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4308436c37a0d4499bfd4f5d16b0079, type: 3}

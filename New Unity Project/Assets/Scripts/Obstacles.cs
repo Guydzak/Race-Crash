@@ -14,6 +14,7 @@ public class Obstacles : MonoBehaviour
 
     private AudioSource source;
     public AudioClip bush;
+    public AudioClip playerOneBush;
 
 
     // Start is called before the first frame update
@@ -40,6 +41,7 @@ public class Obstacles : MonoBehaviour
         hit = true;
         if (col.gameObject.tag == "Player1") // AND Player1 y ix greater than player2 y
         {
+            source.PlayOneShot(playerOneBush, 1f);
             Debug.Log("Closing in");
             p1.min = -5f;
             p1.max = -5f;
