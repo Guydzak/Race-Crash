@@ -11,11 +11,15 @@ public class Acceleration : MonoBehaviour
     public float speed = 1;
     public float turnspeed = 1;
     public int t;
+    public int pickupTime;
     int temp = 0;
     public bool firstTime = false;
     // Start is called before the first frame update
+
+    
     void Start()
     {
+        
         rb = GetComponent<Rigidbody2D>();
         rb.constraints = RigidbodyConstraints2D.FreezeAll; // avoids the rigidbody2(Car to fall when idle)
         StartCoroutine(Move()); //holds the car for the starting point and then starts to accelerate
@@ -24,6 +28,7 @@ public class Acceleration : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         if (firstTime == true)
         {
             rotation = rb.rotation;
@@ -41,7 +46,9 @@ public class Acceleration : MonoBehaviour
             else if (Input.GetKey(KeyCode.W))
             {
                 speed = 100;
+                
             }
+            
         }
     }
 
@@ -68,5 +75,7 @@ public class Acceleration : MonoBehaviour
         firstTime = true; // in order to start the update function after the starting timer.
         rb.constraints = RigidbodyConstraints2D.None; //Alllows movement for the rigid body2d(Car)
     }
+
+    
 }
 
