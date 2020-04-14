@@ -34,6 +34,7 @@ public class Pickup : MonoBehaviour
 
     IEnumerator pickup()
     {
+        
         yield return new WaitForSeconds(T);
         A.speed = 100;
         picked = false;
