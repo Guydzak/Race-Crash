@@ -6,12 +6,12 @@ public class Pickup : MonoBehaviour
 {
     // Start is called before the first frame update
     public Acceleration A;
-    public int T;
+    public int timeForPickup;
     public bool picked = false;
     
     void Start()
     {
-        A = GameObject.FindGameObjectWithTag("Player1").GetComponentInParent<Acceleration>();
+        A = GameObject.FindGameObjectWithTag("Player1").GetComponentInParent<Acceleration>();// we are accessing the parent of this collider 
     }
 
     // Update is called once per frame
@@ -35,7 +35,7 @@ public class Pickup : MonoBehaviour
     IEnumerator pickup()
     {
         
-        yield return new WaitForSeconds(T);
+        yield return new WaitForSeconds(timeForPickup);
         A.speed = 100;
         picked = false;
         Debug.Log("speed down");

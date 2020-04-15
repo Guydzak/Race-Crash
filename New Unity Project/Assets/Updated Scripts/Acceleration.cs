@@ -10,7 +10,7 @@ public class Acceleration : MonoBehaviour
     float y;
     public float speed = 1;
     public float turnspeed = 1;
-    public int t;
+    public int StartTime;
     public int pickupTime;
     int temp = 0;
     public bool firstTime = false;
@@ -55,7 +55,7 @@ public class Acceleration : MonoBehaviour
     IEnumerator Move()
     {
         
-        yield return new WaitForSeconds(t);
+        yield return new WaitForSeconds(StartTime);
         rotation = rb.rotation;
         rb.rotation = rotation - Input.GetAxis("Horizontal2") * turnspeed * Time.deltaTime * 10;
         rotation = Mathf.Deg2Rad * rotation;

@@ -185,7 +185,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: bf5176189eca2a943a46af2c9b6557db, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.03
+      value: -10.2
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: bf5176189eca2a943a46af2c9b6557db, type: 3}
       propertyPath: m_LocalPosition.z
@@ -525,7 +525,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   A: {fileID: 0}
-  T: 3
+  timeForPickup: 0
   picked: 0
 --- !u!1 &839889932 stripped
 GameObject:
@@ -546,8 +546,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 100
-  turnspeed: 5
-  t: 2
+  turnspeed: 10
+  StartTime: 0
   pickupTime: 0
   firstTime: 0
 --- !u!50 &839889934
@@ -719,7 +719,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 100
   turnspeed: 5
-  t: 2
+  StartTime: 0
   pickupTime: 0
   firstTime: 0
 --- !u!1 &1223611822
