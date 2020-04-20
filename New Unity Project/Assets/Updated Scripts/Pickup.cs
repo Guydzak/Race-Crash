@@ -6,12 +6,14 @@ public class Pickup : MonoBehaviour
 {
     // Start is called before the first frame update
     public AccelerationP1 A;
+    public AccelerationP2 B;
     public int timeForPickup;
-    public bool picked = false;
+    public bool picked = false , pickedB = false;
     
     void Start()
     {
-        A = GameObject.FindGameObjectWithTag("Player1").GetComponentInParent<AccelerationP1>();// we are accessing the parent of this collider 
+        A = GameObject.FindGameObjectWithTag("Player1").GetComponentInParent<AccelerationP1>();// we are accessing the parent of this collider
+        B = GameObject.FindGameObjectWithTag("Player2").GetComponent<AccelerationP2>();
     }
 
     // Update is called once per frame
@@ -33,9 +35,9 @@ public class Pickup : MonoBehaviour
         else if(col.gameObject.tag == "Player2")
         {
             GetComponent<MeshRenderer>().enabled = false;
-            picked = true;
+            pickedB = true;
             Debug.Log("Picked up");
-            A.speed = 150;
+            B.speed = 150;
             StartCoroutine(pickup());
 
         }
@@ -43,11 +45,22 @@ public class Pickup : MonoBehaviour
 
     IEnumerator pickup()
     {
-        
-        yield return new WaitForSeconds(timeForPickup);
-        A.speed = 100;
-        picked = false;
-        Debug.Log("speed down");
-        Destroy(gameObject);
+
+        if (picked == true)
+        {
+            yield return new WaitForSeconds(timeForPickup);
+            A.speed = 100;
+            picked = false;
+            Debug.Log("speed down");
+            Destroy(gameObject);
+        }
+        else if(pickedB == true)
+        {
+            yield return new WaitForSeconds(timeForPickup);
+            B.speed = 100;
+            picked = false;
+            Debug.Log("speed down");
+            Destroy(gameObject);
+        }
     }
 }
