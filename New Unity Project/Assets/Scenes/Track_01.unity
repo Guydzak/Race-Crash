@@ -2109,7 +2109,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 100
-  turnspeed: 5
+  turnspeed: 10
   StartTime: 2
   pickupTime: 0
   firstTime: 0
