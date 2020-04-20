@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Acceleration : MonoBehaviour
+public class AccelerationP1 : MonoBehaviour
 {
     Rigidbody2D rb;
     float rotation;
