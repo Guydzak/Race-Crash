@@ -12,9 +12,10 @@ public class MaterialController : MonoBehaviour
         gameObject.GetComponent<Renderer>().material = myColour;
     }
 
-    // Update is called once per frame  
-    void Update()
+    public void UpdateColour()
     {
-        
+        print("changed the colour");
+        myColour = GameObject.FindGameObjectWithTag("MaterialManager").GetComponent<MaterialManager>().player1Mat;
+        gameObject.GetComponent<Renderer>().material = myColour;
     }
 }
