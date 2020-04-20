@@ -8,8 +8,8 @@ public class Obstacles : MonoBehaviour
     protected Rigidbody2D rb2d;
     Rigidbody2D P1, P2;
     public bool hit = false;
-    public Racer p1;
-    public Racer2 p2;
+    public AccelerationP1 p1;
+    public AccelerationP2 p2;
     Monster2 m;
 
     private AudioSource source;
@@ -17,6 +17,7 @@ public class Obstacles : MonoBehaviour
     public AudioClip playerOneBush;
     public AudioClip almostThere;
     public AudioClip closeOne;
+    public float slowAmount;
 
 
     // Start is called before the first frame update
@@ -24,8 +25,8 @@ public class Obstacles : MonoBehaviour
     {
         P1 = GameObject.FindGameObjectWithTag("Player1").GetComponent<Rigidbody2D>();
         P2 = GameObject.FindGameObjectWithTag("Player2").GetComponent<Rigidbody2D>();
-        p1 = GameObject.FindGameObjectWithTag("Player1").GetComponent<Racer>();
-        p2 = GameObject.FindGameObjectWithTag("Player2").GetComponent<Racer2>();
+        p1 = GameObject.FindGameObjectWithTag("Player1").GetComponentInParent<AccelerationP1>();
+        p2 = GameObject.FindGameObjectWithTag("Player2").GetComponent<AccelerationP2>();
         m = GameObject.FindGameObjectWithTag("Monster").GetComponent<Monster2>();
         source = GetComponent<AudioSource>();
 
@@ -46,8 +47,7 @@ public class Obstacles : MonoBehaviour
             source.PlayOneShot(playerOneBush, 1f);
             source.PlayOneShot(almostThere, 1f);
             Debug.Log("Closing in");
-            p1.min = -5f;
-            p1.max = -5f;
+            p1.speed -= slowAmount;
             if (m.dP2 > m.dP1)
             {
                 m.touch = true;
@@ -62,8 +62,7 @@ public class Obstacles : MonoBehaviour
             source.PlayOneShot(almostThere, 1f);
             source.PlayOneShot(bush, 0.3f);
             Debug.Log("Closing in");
-            p2.min = -5f;
-            p2.max = -5f;
+            p2.speed -= slowAmount;
             if (m.dP1 > m.dP2)
             {
                 m.touch = true;
@@ -82,14 +81,12 @@ public class Obstacles : MonoBehaviour
         if (col.gameObject.tag == "Player1")
         {
             m.touch = false;
-            p1.min = -10f;
-            p1.max = -20f;
+            p1.speed += slowAmount;
         }
         else if (col.gameObject.tag == "Player2")
         {
             m.touch = false;
-            p2.min = -10f;
-            p2.max = -20f;
+            p2.speed += slowAmount;
         }
     }
 }
