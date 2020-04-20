@@ -27,7 +27,7 @@ public class Pickup : MonoBehaviour
         {
             GetComponent<MeshRenderer>().enabled = false;
             picked = true;
-            Debug.Log("Picked up");
+            Debug.Log("player 1 Picked up");
             A.speed = 150;
             StartCoroutine(pickup());
             
@@ -36,7 +36,7 @@ public class Pickup : MonoBehaviour
         {
             GetComponent<MeshRenderer>().enabled = false;
             pickedB = true;
-            Debug.Log("Picked up");
+            Debug.Log("player 2 Picked up");
             B.speed = 150;
             StartCoroutine(pickup());
 
@@ -51,7 +51,7 @@ public class Pickup : MonoBehaviour
             yield return new WaitForSeconds(timeForPickup);
             A.speed = 100;
             picked = false;
-            Debug.Log("speed down");
+            Debug.Log(" player 1 speed down");
             Destroy(gameObject);
         }
         else if(pickedB == true)
@@ -59,7 +59,7 @@ public class Pickup : MonoBehaviour
             yield return new WaitForSeconds(timeForPickup);
             B.speed = 100;
             picked = false;
-            Debug.Log("speed down");
+            Debug.Log("player 2 speed down");
             Destroy(gameObject);
         }
     }
