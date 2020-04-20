@@ -23,7 +23,7 @@ public class CameraMovement : MonoBehaviour
         s = speed * Time.deltaTime;
         if(target)
         {
-            transform.position = Vector3.Lerp(transform.position, target.position, speed) + new Vector3(0,-7,-10);
+            transform.position = Vector3.Lerp(transform.position, target.position, speed) + new Vector3(0,0,-10);
         }
     }
 }
