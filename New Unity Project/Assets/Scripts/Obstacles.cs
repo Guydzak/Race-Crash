@@ -25,7 +25,7 @@ public class Obstacles : MonoBehaviour
     {
         P1 = GameObject.FindGameObjectWithTag("Player1").GetComponent<Rigidbody2D>();
         P2 = GameObject.FindGameObjectWithTag("Player2").GetComponent<Rigidbody2D>();
-        p1 = GameObject.FindGameObjectWithTag("Player1").GetComponentInParent<AccelerationP1>();
+        p1 = GameObject.FindGameObjectWithTag("Player1").GetComponent<AccelerationP1>();
         p2 = GameObject.FindGameObjectWithTag("Player2").GetComponent<AccelerationP2>();
         m = GameObject.FindGameObjectWithTag("Monster").GetComponent<Monster2>();
         source = GetComponent<AudioSource>();
@@ -44,8 +44,8 @@ public class Obstacles : MonoBehaviour
         hit = true;
         if (col.gameObject.tag == "Player1") // AND Player1 y ix greater than player2 y
         {
-            source.PlayOneShot(playerOneBush, 1f);
-            source.PlayOneShot(almostThere, 1f);
+            //source.PlayOneShot(playerOneBush, 1f);
+            //source.PlayOneShot(almostThere, 1f);
             Debug.Log("Closing in");
             p1.speed -= slowAmount;
             if (m.dP2 > m.dP1)
