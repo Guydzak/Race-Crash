@@ -43,12 +43,16 @@ public class AccelerationP1 : MonoBehaviour
             {
                 speed = 30;
             }
-            else 
+            else if (PlayerPrefs.GetInt("P1") == 1)
+            {
+                speed = 150;
+            }
+            else if (PlayerPrefs.GetInt("P1") == 0)
             {
                 speed = 100;
-                
             }
-            
+
+
         }
     }
 
@@ -68,10 +72,15 @@ public class AccelerationP1 : MonoBehaviour
         {
             speed = 30;
         }
-        else if (Input.GetKey(KeyCode.W))
+        else if (PlayerPrefs.GetInt("P1") == 1)
+        {
+            speed = 150;
+        }
+        else if (PlayerPrefs.GetInt("P1") == 0)
         {
             speed = 100;
         }
+
         firstTime = true; // in order to start the update function after the starting timer.
         rb.constraints = RigidbodyConstraints2D.None;
         rb.constraints = RigidbodyConstraints2D.FreezeRotation;//Alllows movement for the rigid body2d(Car)

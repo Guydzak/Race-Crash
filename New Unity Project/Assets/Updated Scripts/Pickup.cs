@@ -12,7 +12,7 @@ public class Pickup : MonoBehaviour
     
     void Start()
     {
-        A = GameObject.FindGameObjectWithTag("Player1").GetComponent<AccelerationP1>();// we are accessing the parent of this collider
+        A = GameObject.FindGameObjectWithTag("Player1").GetComponent<AccelerationP1>();
         B = GameObject.FindGameObjectWithTag("Player2").GetComponent<AccelerationP2>();
     }
 
@@ -25,6 +25,7 @@ public class Pickup : MonoBehaviour
     {
         if(col.gameObject.tag == "Player1")
         {
+            PlayerPrefs.SetInt("P1", 1);
             GetComponent<MeshRenderer>().enabled = false;
             picked = true;
             Debug.Log("player 1 Picked up");
@@ -34,6 +35,7 @@ public class Pickup : MonoBehaviour
         }
         else if(col.gameObject.tag == "Player2")
         {
+            PlayerPrefs.SetInt("P2", 1);
             GetComponent<MeshRenderer>().enabled = false;
             pickedB = true;
             Debug.Log("player 2 Picked up");
@@ -49,6 +51,7 @@ public class Pickup : MonoBehaviour
         if (picked == true)
         {
             yield return new WaitForSeconds(timeForPickup);
+            PlayerPrefs.SetInt("P1", 0);
             A.speed = 100;
             picked = false;
             Debug.Log(" player 1 speed down");
@@ -57,6 +60,7 @@ public class Pickup : MonoBehaviour
         else if(pickedB == true)
         {
             yield return new WaitForSeconds(timeForPickup);
+            PlayerPrefs.SetInt("P2", 0);
             B.speed = 100;
             picked = false;
             Debug.Log("player 2 speed down");

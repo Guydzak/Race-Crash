@@ -54,7 +54,20 @@ public class ButtonScript : MonoBehaviour
     }
     public void Race()
     {
-        int track = Random.Range(3,6);
-        SceneManager.LoadScene(track);
+        
+        SceneManager.LoadScene("Track Selector");
+    }
+
+    public void track1Sel()
+    {
+        SceneManager.LoadScene("Track_01");
+    }
+    public void track2Sel()
+    {
+        SceneManager.LoadScene("Track_02");
+    }
+    public void track3Sel()
+    {
+        SceneManager.LoadScene("Track_03");
     }
 }

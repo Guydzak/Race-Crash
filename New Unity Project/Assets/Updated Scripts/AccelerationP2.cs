@@ -14,6 +14,8 @@ public class AccelerationP2 : MonoBehaviour
     public int pickupTime;
     int temp = 0;
     public bool firstTime = false;
+
+    public Pickup P;
     // Start is called before the first frame update
 
 
@@ -23,6 +25,7 @@ public class AccelerationP2 : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         rb.constraints = RigidbodyConstraints2D.FreezeAll; // avoids the rigidbody2(Car to fall when idle)
         StartCoroutine(Move()); //holds the car for the starting point and then starts to accelerate
+        P = GameObject.FindGameObjectWithTag("Pickup").GetComponent<Pickup>();
     }
 
     // Update is called once per frame
@@ -43,11 +46,16 @@ public class AccelerationP2 : MonoBehaviour
             {
                 speed = 30;
             }
-            else if (Input.GetKey(KeyCode.UpArrow))
+            
+            else if(PlayerPrefs.GetInt("P2") == 1)
+            {
+                speed = 150;
+            }
+            else if (PlayerPrefs.GetInt("P2") == 0)
             {
                 speed = 100;
-
             }
+
 
         }
     }
@@ -68,10 +76,15 @@ public class AccelerationP2 : MonoBehaviour
         {
             speed = 30;
         }
-        else
+        else if (PlayerPrefs.GetInt("P2") == 1)
+        {
+            speed = 150;
+        }
+        else if (PlayerPrefs.GetInt("P2") == 0)
         {
             speed = 100;
         }
+
         firstTime = true; // in order to start the update function after the starting timer.
         rb.constraints = RigidbodyConstraints2D.None;
         rb.constraints = RigidbodyConstraints2D.FreezeRotation;//Alllows movement for the rigid body2d(Car)

@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Monster2 : MonoBehaviour
 {
-    GameObject player1;
-    GameObject player2;
+    public GameObject player1;
+    public GameObject player2;
     GameObject monster;
 
     public float dP1, dP2;
