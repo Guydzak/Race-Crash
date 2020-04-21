@@ -25,7 +25,7 @@ public class Obstacles : MonoBehaviour
     {
         P1 = GameObject.FindGameObjectWithTag("Player1").GetComponent<Rigidbody2D>();
         P2 = GameObject.FindGameObjectWithTag("Player2").GetComponent<Rigidbody2D>();
-        p1 = GameObject.FindGameObjectWithTag("Player1").GetComponent<AccelerationP1>();
+        p1 = GameObject.FindGameObjectWithTag("Player1").GetComponentInParent<AccelerationP1>();
         p2 = GameObject.FindGameObjectWithTag("Player2").GetComponent<AccelerationP2>();
         m = GameObject.FindGameObjectWithTag("Monster").GetComponent<Monster2>();
         source = GetComponent<AudioSource>();
