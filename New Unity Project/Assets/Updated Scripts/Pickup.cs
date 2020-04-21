@@ -12,7 +12,7 @@ public class Pickup : MonoBehaviour
     
     void Start()
     {
-        A = GameObject.FindGameObjectWithTag("Player1").GetComponentInParent<AccelerationP1>();// we are accessing the parent of this collider
+        A = GameObject.FindGameObjectWithTag("Player1").GetComponent<AccelerationP1>();// we are accessing the parent of this collider
         B = GameObject.FindGameObjectWithTag("Player2").GetComponent<AccelerationP2>();
     }
 
