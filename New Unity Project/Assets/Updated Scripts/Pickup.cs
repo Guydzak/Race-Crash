@@ -14,6 +14,8 @@ public class Pickup : MonoBehaviour
     {
         A = GameObject.FindGameObjectWithTag("Player1").GetComponent<AccelerationP1>();
         B = GameObject.FindGameObjectWithTag("Player2").GetComponent<AccelerationP2>();
+        PlayerPrefs.SetInt("P1", 0);
+        PlayerPrefs.SetInt("P2", 0);
     }
 
     // Update is called once per frame
