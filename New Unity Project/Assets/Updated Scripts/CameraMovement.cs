@@ -13,6 +13,7 @@ public class CameraMovement : MonoBehaviour
     void Start()
     {
         myCam = GetComponent<Camera>();
+        GameObject.FindGameObjectWithTag("MaterialManager").GetComponent<MaterialManager>().SetColour();
     }
 
 
