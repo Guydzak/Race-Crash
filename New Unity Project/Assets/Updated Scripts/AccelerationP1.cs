@@ -43,7 +43,7 @@ public class AccelerationP1 : MonoBehaviour
             {
                 speed = 30;
             }
-            else if (Input.GetKey(KeyCode.W))
+            else 
             {
                 speed = 100;
                 
