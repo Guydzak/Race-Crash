@@ -9,7 +9,6 @@ public class Monster2 : MonoBehaviour
     GameObject monster;
 
     public float dP1, dP2;
-    public Obstacles O;
     public bool touch = false;
     public int T;
 

@@ -10,7 +10,7 @@ public class Obstacles : MonoBehaviour
     public bool hit = false;
     public AccelerationP1 p1;
     public AccelerationP2 p2;
-    Monster2 m;
+    public UpdatedMonster2 m;
 
     private AudioSource source;
     public AudioClip bush;
@@ -27,7 +27,7 @@ public class Obstacles : MonoBehaviour
         P2 = GameObject.FindGameObjectWithTag("Player2").GetComponent<Rigidbody2D>();
         p1 = GameObject.FindGameObjectWithTag("Player1").GetComponentInParent<AccelerationP1>();
         p2 = GameObject.FindGameObjectWithTag("Player2").GetComponent<AccelerationP2>();
-        m = GameObject.FindGameObjectWithTag("Monster").GetComponent<Monster2>();
+        m = GameObject.FindGameObjectWithTag("Monster").GetComponent<UpdatedMonster2>();
         source = GetComponent<AudioSource>();
 
     }
@@ -47,28 +47,30 @@ public class Obstacles : MonoBehaviour
             //source.PlayOneShot(playerOneBush, 1f);
             //source.PlayOneShot(almostThere, 1f);
             Debug.Log("Closing in");
-            p1.speed -= slowAmount;
-            if (m.dP2 > m.dP1)
+            p1.speed = slowAmount;
+            if (m.dp2 > m.dp1)
             {
                 m.touch = true;
-                m.transform.position = new Vector3(m.transform.position.x, P1.transform.position.y + 7f, P1.transform.position.z);
-                m.source.PlayOneShot(m.Roar, 0.2f);
-                m.source.PlayOneShot(m.closeOne, 1f);
+                m.moveSpeed = m.chaseSpeed;
+                //m.transform.position = new Vector3(m.transform.position.x, P1.transform.position.y + 7f, P1.transform.position.z);
+                //m.source.PlayOneShot(m.Roar, 0.2f);
+                //m.source.PlayOneShot(m.closeOne, 1f);
             }
             
         }
         else if (col.gameObject.tag == "Player2")
         {
-            source.PlayOneShot(almostThere, 1f);
-            source.PlayOneShot(bush, 0.3f);
+            //source.PlayOneShot(almostThere, 1f);
+            //source.PlayOneShot(bush, 0.3f);
             Debug.Log("Closing in");
-            p2.speed -= slowAmount;
-            if (m.dP1 > m.dP2)
+            p2.speed = slowAmount;
+            if (m.dp1 > m.dp2)
             {
                 m.touch = true;
-                m.transform.position = new Vector3(m.transform.position.x, P2.transform.position.y + 7f, P2.transform.position.z);
-                m.source.PlayOneShot(m.Roar, 0.2f);
-                m.source.PlayOneShot(m.friendly, 01f);
+                m.moveSpeed = m.chaseSpeed;
+                //m.transform.position = new Vector3(m.transform.position.x, P2.transform.position.y + 7f, P2.transform.position.z);
+                //m.source.PlayOneShot(m.Roar, 0.2f);
+                // m.source.PlayOneShot(m.friendly, 01f);
 
             }
            
@@ -81,12 +83,14 @@ public class Obstacles : MonoBehaviour
         if (col.gameObject.tag == "Player1")
         {
             m.touch = false;
-            p1.speed += slowAmount;
+            m.moveSpeed = 7.5f;
+            p1.speed = p1.defSpeed;
         }
         else if (col.gameObject.tag == "Player2")
         {
             m.touch = false;
-            p2.speed += slowAmount;
+            m.moveSpeed = 7.5f;
+            p2.speed = p2.defSpeed; ;
         }
     }
 }
