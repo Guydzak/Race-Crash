@@ -120,29 +120,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &6575846 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7803071415457329911, guid: ce68a4e94a9225b45be1692a7aef05f3,
-    type: 3}
-  m_PrefabInstance: {fileID: 99011397}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &6575851
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6575846}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21fc843a9747cf0428c177ce668ad54e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  A: {fileID: 0}
-  B: {fileID: 0}
-  timeForPickup: 0
-  picked: 0
-  pickedB: 0
 --- !u!1001 &45075676
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -424,52 +401,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0f1e1518a80e562458930d8b2d0670d9, type: 3}
---- !u!1 &163864643 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7803071415457329911, guid: ce68a4e94a9225b45be1692a7aef05f3,
-    type: 3}
-  m_PrefabInstance: {fileID: 716548502}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &163864644
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 163864643}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21fc843a9747cf0428c177ce668ad54e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  A: {fileID: 0}
-  B: {fileID: 0}
-  timeForPickup: 0
-  picked: 0
-  pickedB: 0
---- !u!1 &180012487 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7803071415457329911, guid: ce68a4e94a9225b45be1692a7aef05f3,
-    type: 3}
-  m_PrefabInstance: {fileID: 1544547875}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &180012488
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 180012487}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21fc843a9747cf0428c177ce668ad54e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  A: {fileID: 0}
-  B: {fileID: 0}
-  timeForPickup: 0
-  picked: 0
-  pickedB: 0
 --- !u!1001 &189918360
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -975,29 +906,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c0a4c92c49632f4b891784cb8cf8303, type: 3}
---- !u!1 &274170740 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7803071415457329911, guid: ce68a4e94a9225b45be1692a7aef05f3,
-    type: 3}
-  m_PrefabInstance: {fileID: 595774928}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &274170741
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 274170740}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21fc843a9747cf0428c177ce668ad54e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  A: {fileID: 0}
-  B: {fileID: 0}
-  timeForPickup: 0
-  picked: 0
-  pickedB: 0
 --- !u!1001 &290504364
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1730,12 +1638,12 @@ PrefabInstance:
     - target: {fileID: 3784779284389647269, guid: 318124fba1460fb4c9ac022c4c7b3963,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.3
+      value: 9.56
       objectReference: {fileID: 0}
     - target: {fileID: 3784779284389647269, guid: 318124fba1460fb4c9ac022c4c7b3963,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5.9
+      value: -3.11
       objectReference: {fileID: 0}
     - target: {fileID: 3784779284389647269, guid: 318124fba1460fb4c9ac022c4c7b3963,
         type: 3}
@@ -1790,13 +1698,23 @@ PrefabInstance:
     - target: {fileID: 3784779284498137046, guid: 318124fba1460fb4c9ac022c4c7b3963,
         type: 3}
       propertyPath: chaseSpeed
-      value: 10
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3784779284498137046, guid: 318124fba1460fb4c9ac022c4c7b3963,
         type: 3}
       propertyPath: moveSpeed
-      value: 7.5
+      value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 3784779284498137046, guid: 318124fba1460fb4c9ac022c4c7b3963,
+        type: 3}
+      propertyPath: defSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3784779284398980161, guid: 318124fba1460fb4c9ac022c4c7b3963,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 1b447a681891ea74894a0ce0bded5a81, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 318124fba1460fb4c9ac022c4c7b3963, type: 3}
 --- !u!1 &534019279
@@ -2023,29 +1941,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 238f665918ad66b44ac23d8ffb0028c5, type: 3}
---- !u!1 &558093964 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7803071415457329911, guid: ce68a4e94a9225b45be1692a7aef05f3,
-    type: 3}
-  m_PrefabInstance: {fileID: 954908092}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &558093969
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 558093964}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21fc843a9747cf0428c177ce668ad54e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  A: {fileID: 0}
-  B: {fileID: 0}
-  timeForPickup: 0
-  picked: 0
-  pickedB: 0
 --- !u!1001 &560504748
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3160,29 +3055,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d4cffe5f1249a046b3bc42bbd99dc47, type: 3}
---- !u!1 &915443255 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7803071415457329911, guid: ce68a4e94a9225b45be1692a7aef05f3,
-    type: 3}
-  m_PrefabInstance: {fileID: 2092824391}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &915443256
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 915443255}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21fc843a9747cf0428c177ce668ad54e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  A: {fileID: 0}
-  B: {fileID: 0}
-  timeForPickup: 0
-  picked: 0
-  pickedB: 0
 --- !u!1001 &954908092
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3885,8 +3757,8 @@ GameObject:
   - component: {fileID: 1159302658}
   - component: {fileID: 1159302657}
   m_Layer: 0
-  m_Name: Car 2
-  m_TagString: Player2
+  m_Name: Player 2
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3910,7 +3782,6 @@ MonoBehaviour:
   pickupTime: 3
   firstTime: 0
   m: {fileID: 0}
-  P: {fileID: 0}
 --- !u!50 &1159302658
 Rigidbody2D:
   serializedVersion: 4
@@ -4021,29 +3892,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5235ccd2d2c32e4e94fe22cfed419dc, type: 3}
---- !u!1 &1203167150 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7803071415457329911, guid: ce68a4e94a9225b45be1692a7aef05f3,
-    type: 3}
-  m_PrefabInstance: {fileID: 1985938285}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1203167151
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1203167150}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21fc843a9747cf0428c177ce668ad54e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  A: {fileID: 0}
-  B: {fileID: 0}
-  timeForPickup: 0
-  picked: 0
-  pickedB: 0
 --- !u!1001 &1213202339
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5304,29 +5152,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5235ccd2d2c32e4e94fe22cfed419dc, type: 3}
---- !u!1 &1589923663 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7803071415457329911, guid: ce68a4e94a9225b45be1692a7aef05f3,
-    type: 3}
-  m_PrefabInstance: {fileID: 397912282}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1589923668
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1589923663}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21fc843a9747cf0428c177ce668ad54e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  A: {fileID: 0}
-  B: {fileID: 0}
-  timeForPickup: 0
-  picked: 0
-  pickedB: 0
 --- !u!1001 &1609867328
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5672,52 +5497,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c0a4c92c49632f4b891784cb8cf8303, type: 3}
---- !u!1 &1745962478 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7803071415457329911, guid: ce68a4e94a9225b45be1692a7aef05f3,
-    type: 3}
-  m_PrefabInstance: {fileID: 1934700905}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1745962483
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1745962478}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21fc843a9747cf0428c177ce668ad54e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  A: {fileID: 0}
-  B: {fileID: 0}
-  timeForPickup: 0
-  picked: 0
-  pickedB: 0
---- !u!1 &1754621195 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7803071415457329911, guid: ce68a4e94a9225b45be1692a7aef05f3,
-    type: 3}
-  m_PrefabInstance: {fileID: 2112431869}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1754621200
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1754621195}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21fc843a9747cf0428c177ce668ad54e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  A: {fileID: 0}
-  B: {fileID: 0}
-  timeForPickup: 0
-  picked: 0
-  pickedB: 0
 --- !u!1001 &1805585058
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6955,29 +6734,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce68a4e94a9225b45be1692a7aef05f3, type: 3}
---- !u!1 &2098139282 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7803071415457329911, guid: ce68a4e94a9225b45be1692a7aef05f3,
-    type: 3}
-  m_PrefabInstance: {fileID: 989501741}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2098139287
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2098139282}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21fc843a9747cf0428c177ce668ad54e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  A: {fileID: 0}
-  B: {fileID: 0}
-  timeForPickup: 0
-  picked: 0
-  pickedB: 0
 --- !u!1001 &2112431869
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7131,7 +6887,12 @@ PrefabInstance:
     - target: {fileID: 8720069231049059010, guid: 9d115987267960a4c919bb06acbd9b0b,
         type: 3}
       propertyPath: m_Name
-      value: Car
+      value: Player 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8720069231049059010, guid: 9d115987267960a4c919bb06acbd9b0b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 8720069231049059015, guid: 9d115987267960a4c919bb06acbd9b0b,
         type: 3}

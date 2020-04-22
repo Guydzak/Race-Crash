@@ -26,7 +26,7 @@ public class Obstacles : MonoBehaviour
         P1 = GameObject.FindGameObjectWithTag("Player1").GetComponent<Rigidbody2D>();
         P2 = GameObject.FindGameObjectWithTag("Player2").GetComponent<Rigidbody2D>();
         p1 = GameObject.FindGameObjectWithTag("Player1").GetComponentInParent<AccelerationP1>();
-        p2 = GameObject.FindGameObjectWithTag("Player2").GetComponent<AccelerationP2>();
+        p2 = GameObject.FindGameObjectWithTag("Player2").GetComponentInParent<AccelerationP2>();
         m = GameObject.FindGameObjectWithTag("Monster").GetComponent<UpdatedMonster2>();
         source = GetComponent<AudioSource>();
 
@@ -83,13 +83,13 @@ public class Obstacles : MonoBehaviour
         if (col.gameObject.tag == "Player1")
         {
             m.touch = false;
-            m.moveSpeed = 7.5f;
+            m.moveSpeed = m.defSpeed;
             p1.speed = p1.defSpeed;
         }
         else if (col.gameObject.tag == "Player2")
         {
             m.touch = false;
-            m.moveSpeed = 7.5f;
+            m.moveSpeed = m.defSpeed;
             p2.speed = p2.defSpeed; ;
         }
     }

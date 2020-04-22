@@ -2083,7 +2083,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1497060364}
   m_LocalRotation: {x: 0, y: 0.7071068, z: -0.7071068, w: 0}
-  m_LocalPosition: {x: 2.49, y: -1.857, z: -0}
+  m_LocalPosition: {x: 2.49, y: -1.634, z: 0}
   m_LocalScale: {x: 0.3415, y: 0.34150025, z: 0.34150028}
   m_Children:
   - {fileID: 1605626599}
@@ -2788,12 +2788,12 @@ PrefabInstance:
     - target: {fileID: 4922383335659447546, guid: 0583e568149a9f84f9326b8e25fc100b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.857
+      value: -1.634
       objectReference: {fileID: 0}
     - target: {fileID: 4922383335659447546, guid: 0583e568149a9f84f9326b8e25fc100b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4922383335659447546, guid: 0583e568149a9f84f9326b8e25fc100b,
         type: 3}
@@ -2838,12 +2838,12 @@ PrefabInstance:
     - target: {fileID: 4922383335659878618, guid: 0583e568149a9f84f9326b8e25fc100b,
         type: 3}
       propertyPath: m_Name
-      value: Car
+      value: Player 1
       objectReference: {fileID: 0}
     - target: {fileID: 4922383335659878618, guid: 0583e568149a9f84f9326b8e25fc100b,
         type: 3}
       propertyPath: m_TagString
-      value: Player1
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 4922383336166040117, guid: 0583e568149a9f84f9326b8e25fc100b,
         type: 3}
@@ -2854,6 +2854,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Constraints
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4922383334869468551, guid: 0583e568149a9f84f9326b8e25fc100b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0583e568149a9f84f9326b8e25fc100b, type: 3}
@@ -3093,8 +3098,8 @@ GameObject:
   - component: {fileID: 1497060366}
   - component: {fileID: 1497060365}
   m_Layer: 0
-  m_Name: Car
-  m_TagString: Player1
+  m_Name: Player 1
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3114,9 +3119,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 100
   turnspeed: 10
+  defSpeed: 0
   StartTime: 2
   pickupTime: 3
   firstTime: 0
+  m: {fileID: 0}
 --- !u!50 &1497060366
 Rigidbody2D:
   serializedVersion: 4
@@ -4433,7 +4440,7 @@ GameObject:
   - component: {fileID: 1993811139}
   m_Layer: 0
   m_Name: Player2
-  m_TagString: Player2
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4467,7 +4474,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1993811135}
   m_LocalRotation: {x: 0, y: 0.7071068, z: -0.7071068, w: 0}
-  m_LocalPosition: {x: -1.52, y: -4.92, z: -0}
+  m_LocalPosition: {x: -1.52, y: -1.633, z: 0}
   m_LocalScale: {x: 0.3415, y: 0.34150025, z: 0.34150028}
   m_Children:
   - {fileID: 1278414376}
@@ -4493,10 +4500,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 100
   turnspeed: 10
+  defSpeed: 0
   StartTime: 2
   pickupTime: 0
   firstTime: 0
-  P: {fileID: 0}
+  m: {fileID: 0}
 --- !u!1001 &2004236834
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4881,15 +4889,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: DragonSoulEaterMesh (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3784779284389482373, guid: 318124fba1460fb4c9ac022c4c7b3963,
+        type: 3}
+      propertyPath: m_TagString
+      value: Monster
+      objectReference: {fileID: 0}
     - target: {fileID: 3784779284389647269, guid: 318124fba1460fb4c9ac022c4c7b3963,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.32
+      value: 0.65
       objectReference: {fileID: 0}
     - target: {fileID: 3784779284389647269, guid: 318124fba1460fb4c9ac022c4c7b3963,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.34
+      value: 17.13
       objectReference: {fileID: 0}
     - target: {fileID: 3784779284389647269, guid: 318124fba1460fb4c9ac022c4c7b3963,
         type: 3}
@@ -4946,5 +4959,25 @@ PrefabInstance:
       propertyPath: player2
       value: 
       objectReference: {fileID: 1993811138}
+    - target: {fileID: 3784779284498137046, guid: 318124fba1460fb4c9ac022c4c7b3963,
+        type: 3}
+      propertyPath: moveSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3784779284498137046, guid: 318124fba1460fb4c9ac022c4c7b3963,
+        type: 3}
+      propertyPath: chaseSpeed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3784779284498137046, guid: 318124fba1460fb4c9ac022c4c7b3963,
+        type: 3}
+      propertyPath: defSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3784779284398980161, guid: 318124fba1460fb4c9ac022c4c7b3963,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 1b447a681891ea74894a0ce0bded5a81, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 318124fba1460fb4c9ac022c4c7b3963, type: 3}

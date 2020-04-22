@@ -17,7 +17,7 @@ public class AccelerationP2 : MonoBehaviour
     public bool firstTime = false;
     public UpdatedMonster2 m;
 
-    public Pickup P;
+   
     // Start is called before the first frame update
 
 
@@ -28,7 +28,7 @@ public class AccelerationP2 : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         rb.constraints = RigidbodyConstraints2D.FreezeAll; // avoids the rigidbody2(Car to fall when idle)
         StartCoroutine(Move()); //holds the car for the starting point and then starts to accelerate
-        P = GameObject.FindGameObjectWithTag("Pickup").GetComponent<Pickup>();
+        
     }
 
     // Update is called once per frame

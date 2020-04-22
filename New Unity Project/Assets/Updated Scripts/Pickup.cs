@@ -9,13 +9,17 @@ public class Pickup : MonoBehaviour
     public AccelerationP2 B;
     public int timeForPickup;
     public bool picked = false , pickedB = false;
-    
-    void Start()
+
+    void Awake()
     {
-        A = GameObject.FindGameObjectWithTag("Player1").GetComponent<AccelerationP1>();
-        B = GameObject.FindGameObjectWithTag("Player2").GetComponent<AccelerationP2>();
         PlayerPrefs.SetInt("P1", 0);
         PlayerPrefs.SetInt("P2", 0);
+    }
+    void Start()
+    {
+        A = GameObject.FindGameObjectWithTag("Player1").GetComponentInParent<AccelerationP1>();
+        B = GameObject.FindGameObjectWithTag("Player2").GetComponentInParent<AccelerationP2>();
+       
     }
 
     // Update is called once per frame

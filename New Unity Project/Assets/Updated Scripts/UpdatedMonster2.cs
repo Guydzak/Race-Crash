@@ -11,7 +11,7 @@ public class UpdatedMonster2 : MonoBehaviour
     public float moveSpeed = 5f;
     private Rigidbody2D rb;
     private Vector3 movement;
-    public float dp1, dp2, chaseSpeed;
+    public float dp1, dp2, chaseSpeed, defSpeed;
 
     // Start is called before the first frame update
     void Start()
@@ -34,7 +34,7 @@ public class UpdatedMonster2 : MonoBehaviour
         }
         else if(dp1 > dp2)
         {
-            Vector3 direction = player2.position - transform.position;
+            Vector3 direction = player2.position - transform.position + new Vector3(2,7,0);
             float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
             rb.rotation = angle;
             direction.Normalize();
