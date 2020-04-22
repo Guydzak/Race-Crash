@@ -10,6 +10,7 @@ public class AccelerationP1 : MonoBehaviour
     float y;
     public float speed = 1;
     public float turnspeed = 1;
+    public float defSpeed;
     public int StartTime;
     public int pickupTime;
     int temp = 0;
