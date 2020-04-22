@@ -15,12 +15,14 @@ public class AccelerationP1 : MonoBehaviour
     public int pickupTime;
     int temp = 0;
     public bool firstTime = false;
+    public UpdatedMonster2 m;
     // Start is called before the first frame update
 
-    
+
     void Start()
     {
-        
+
+        m = GameObject.FindGameObjectWithTag("Monster").GetComponent<UpdatedMonster2>();
         rb = GetComponent<Rigidbody2D>();
         rb.constraints = RigidbodyConstraints2D.FreezeAll; // avoids the rigidbody2(Car to fall when idle)
         StartCoroutine(Move()); //holds the car for the starting point and then starts to accelerate
@@ -48,7 +50,7 @@ public class AccelerationP1 : MonoBehaviour
             {
                 speed = 150;
             }
-            else if (PlayerPrefs.GetInt("P1") == 0)
+            else if (PlayerPrefs.GetInt("P1") == 0 && m.touch == false)
             {
                 speed = 100;
             }
@@ -77,7 +79,7 @@ public class AccelerationP1 : MonoBehaviour
         {
             speed = 150;
         }
-        else if (PlayerPrefs.GetInt("P1") == 0)
+        else if (PlayerPrefs.GetInt("P1") == 0 && m.touch == false)
         {
             speed = 100;
         }
