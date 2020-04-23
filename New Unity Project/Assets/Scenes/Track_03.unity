@@ -249,6 +249,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3784779284398980161, guid: 318124fba1460fb4c9ac022c4c7b3963,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 1b447a681891ea74894a0ce0bded5a81, type: 2}
     - target: {fileID: 3784779284498137046, guid: 318124fba1460fb4c9ac022c4c7b3963,
         type: 3}
       propertyPath: player2
@@ -269,11 +274,6 @@ PrefabInstance:
       propertyPath: chaseSpeed
       value: 10
       objectReference: {fileID: 0}
-    - target: {fileID: 3784779284398980161, guid: 318124fba1460fb4c9ac022c4c7b3963,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 1b447a681891ea74894a0ce0bded5a81, type: 2}
     m_RemovedComponents:
     - {fileID: 3784779284498137046, guid: 318124fba1460fb4c9ac022c4c7b3963, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 318124fba1460fb4c9ac022c4c7b3963, type: 3}
@@ -1283,7 +1283,7 @@ GameObject:
   - component: {fileID: 324014556}
   m_Layer: 0
   m_Name: Body
-  m_TagString: Untagged
+  m_TagString: Chasis
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1739,7 +1739,7 @@ GameObject:
   - component: {fileID: 426024047}
   m_Layer: 0
   m_Name: Body
-  m_TagString: Untagged
+  m_TagString: Chasis
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5546,6 +5546,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8110913659791462586, guid: b5fcdf9b3a3e8474eb36b2fdba7ca02e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Chasis
+      objectReference: {fileID: 0}
     - target: {fileID: 8110913661406471232, guid: b5fcdf9b3a3e8474eb36b2fdba7ca02e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5609,7 +5614,7 @@ PrefabInstance:
     - target: {fileID: 8110913659681861200, guid: b5fcdf9b3a3e8474eb36b2fdba7ca02e,
         type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Player2
       objectReference: {fileID: 0}
     - target: {fileID: 8110913659687000661, guid: b5fcdf9b3a3e8474eb36b2fdba7ca02e,
         type: 3}
@@ -6592,7 +6597,7 @@ GameObject:
   - component: {fileID: 224346757}
   m_Layer: 0
   m_Name: Player 1
-  m_TagString: Untagged
+  m_TagString: Player1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6780,6 +6785,11 @@ PrefabInstance:
       propertyPath: defSpeed
       value: 100
       objectReference: {fileID: 0}
+    - target: {fileID: 8110913659791462586, guid: b5fcdf9b3a3e8474eb36b2fdba7ca02e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Chasis
+      objectReference: {fileID: 0}
     - target: {fileID: 8110913661406471232, guid: b5fcdf9b3a3e8474eb36b2fdba7ca02e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6843,7 +6853,7 @@ PrefabInstance:
     - target: {fileID: 8110913659681861200, guid: b5fcdf9b3a3e8474eb36b2fdba7ca02e,
         type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Player1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b5fcdf9b3a3e8474eb36b2fdba7ca02e, type: 3}
@@ -8101,7 +8111,7 @@ GameObject:
   - component: {fileID: 1984977837}
   m_Layer: 0
   m_Name: Player 2
-  m_TagString: Untagged
+  m_TagString: Player2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

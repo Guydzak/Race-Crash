@@ -3654,7 +3654,7 @@ GameObject:
   - component: {fileID: 1159302657}
   m_Layer: 0
   m_Name: Player 2
-  m_TagString: Untagged
+  m_TagString: Player2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4071,7 +4071,7 @@ GameObject:
   - component: {fileID: 1389926539}
   m_Layer: 0
   m_Name: Body
-  m_TagString: Untagged
+  m_TagString: Chasis
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6788,7 +6788,7 @@ PrefabInstance:
     - target: {fileID: 8720069231049059010, guid: 9d115987267960a4c919bb06acbd9b0b,
         type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Player1
       objectReference: {fileID: 0}
     - target: {fileID: 8720069231049059015, guid: 9d115987267960a4c919bb06acbd9b0b,
         type: 3}
@@ -6849,6 +6849,11 @@ PrefabInstance:
         type: 3}
       propertyPath: defSpeed
       value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8720069231256871499, guid: 9d115987267960a4c919bb06acbd9b0b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Chasis
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9d115987267960a4c919bb06acbd9b0b, type: 3}
