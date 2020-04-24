@@ -12,6 +12,8 @@ TagManager:
   - MaterialManager
   - Chasis
   - Button
+  - Collision1
+  - Collision2
   layers:
   - Default
   - TransparentFX

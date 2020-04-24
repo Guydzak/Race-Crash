@@ -17,8 +17,8 @@ public class Pickup : MonoBehaviour
     }
     void Start()
     {
-        A = GameObject.FindGameObjectWithTag("Player1").GetComponentInParent<AccelerationP1>();
-        B = GameObject.FindGameObjectWithTag("Player2").GetComponentInParent<AccelerationP2>();
+        A = GameObject.FindGameObjectWithTag("Collision1").GetComponentInParent<AccelerationP1>();
+        B = GameObject.FindGameObjectWithTag("Collision2").GetComponentInParent<AccelerationP2>();
        
     }
 
@@ -29,7 +29,7 @@ public class Pickup : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D col)
     {
-        if(col.gameObject.tag == "Player1")
+        if(col.gameObject.tag == "Collision1")
         {
             PlayerPrefs.SetInt("P1", 1);
             GetComponent<MeshRenderer>().enabled = false;
@@ -39,7 +39,7 @@ public class Pickup : MonoBehaviour
             StartCoroutine(pickup());
             
         }
-        else if(col.gameObject.tag == "Player2")
+        else if(col.gameObject.tag == "Collision2")
         {
             PlayerPrefs.SetInt("P2", 1);
             GetComponent<MeshRenderer>().enabled = false;

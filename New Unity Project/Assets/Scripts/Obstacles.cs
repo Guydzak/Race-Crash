@@ -25,8 +25,8 @@ public class Obstacles : MonoBehaviour
     {
         P1 = GameObject.FindGameObjectWithTag("Player1").GetComponent<Rigidbody2D>();
         P2 = GameObject.FindGameObjectWithTag("Player2").GetComponent<Rigidbody2D>();
-        p1 = GameObject.FindGameObjectWithTag("Player1").GetComponentInParent<AccelerationP1>();
-        p2 = GameObject.FindGameObjectWithTag("Player2").GetComponentInParent<AccelerationP2>();
+        p1 = GameObject.FindGameObjectWithTag("Collision1").GetComponentInParent<AccelerationP1>();
+        p2 = GameObject.FindGameObjectWithTag("Collision2").GetComponentInParent<AccelerationP2>();
         m = GameObject.FindGameObjectWithTag("Monster").GetComponent<UpdatedMonster2>();
         source = GetComponent<AudioSource>();
 
@@ -42,7 +42,7 @@ public class Obstacles : MonoBehaviour
     void OnTriggerEnter2D(Collider2D col)
     {
         hit = true;
-        if (col.gameObject.tag == "Player1") // AND Player1 y ix greater than player2 y
+        if (col.gameObject.tag == "Collision1") // AND Player1 y ix greater than player2 y
         {
             //source.PlayOneShot(playerOneBush, 1f);
             //source.PlayOneShot(almostThere, 1f);
@@ -58,7 +58,7 @@ public class Obstacles : MonoBehaviour
             }
             
         }
-        else if (col.gameObject.tag == "Player2")
+        else if (col.gameObject.tag == "Collision2")
         {
             //source.PlayOneShot(almostThere, 1f);
             //source.PlayOneShot(bush, 0.3f);
@@ -80,13 +80,13 @@ public class Obstacles : MonoBehaviour
     void OnTriggerExit2D(Collider2D col)
     {
         hit = false;
-        if (col.gameObject.tag == "Player1")
+        if (col.gameObject.tag == "Collision1")
         {
             m.touch = false;
             m.moveSpeed = m.defSpeed;
             p1.speed = p1.defSpeed;
         }
-        else if (col.gameObject.tag == "Player2")
+        else if (col.gameObject.tag == "Collision2")
         {
             m.touch = false;
             m.moveSpeed = m.defSpeed;

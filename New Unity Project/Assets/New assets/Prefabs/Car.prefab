@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 8720069230081820845}
   m_Layer: 0
   m_Name: Collision
-  m_TagString: Player1
+  m_TagString: collision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -373,9 +373,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 100
   turnspeed: 10
+  defSpeed: 0
   StartTime: 2
   pickupTime: 3
   firstTime: 0
+  m: {fileID: 0}
 --- !u!1 &8720069231256871499
 GameObject:
   m_ObjectHideFlags: 0
