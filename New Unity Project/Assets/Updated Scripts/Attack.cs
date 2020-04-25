@@ -18,7 +18,7 @@ public class Attack : MonoBehaviour
     }
 
     // Update is called once per frame
-    public void OnTriggerEnter2D(Collider2D player)
+    /*public void OnTriggerEnter2D(Collider2D player)
     {
         if (player.gameObject.tag == "Collider1")
         {
@@ -28,9 +28,9 @@ public class Attack : MonoBehaviour
         {
             StartCoroutine(attack());
         }
-    }
+    }*/
 
-    public void OnTriggerExit2D(Collider2D player)
+    /*public void OnTriggerExit2D(Collider2D player)
     {
         if (player.gameObject.tag == "Collider1")
         {
@@ -40,22 +40,47 @@ public class Attack : MonoBehaviour
         {
             touch2 = false;
         }
+    }*/
+
+
+   
+    public void OnCollisionEnter2D(Collision2D player)
+    {
+        Debug.Log("Collided");
+        if (player.gameObject.tag == "Collision1")
+        {
+            StartCoroutine(attack());
+        }
+        else if (player.gameObject.tag == "Collision2")
+        {
+            StartCoroutine(attack());
+        }
     }
-
-
+    public void OnCollisionExit2D(Collision2D player)
+    {
+        Debug.Log("Released");
+        if (player.gameObject.tag == "Collision1")
+        {
+            touch1 = false;
+        }
+        else if (player.gameObject.tag == "Collision2")
+        {
+            touch2 = false;
+        }
+    }
     IEnumerator attack()
     {
-        yield return new WaitForSeconds(attackTime);
+        
         if (touch1 == true)
         {
-            yield return new WaitForSeconds(boostTime);
             p1.lives -= 1;
+            yield return new WaitForSeconds(boostTime);            
             p1.speed = 180;
         }
         else if (touch2 == true)
         {
-            yield return new WaitForSeconds(boostTime);
             p2.lives -= 1;
+            yield return new WaitForSeconds(boostTime);            
             p2.speed = 180;
         }
     }

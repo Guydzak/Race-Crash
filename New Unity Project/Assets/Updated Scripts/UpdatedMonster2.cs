@@ -57,45 +57,5 @@ public class UpdatedMonster2 : MonoBehaviour
         rb.MovePosition((Vector3)transform.position + (direction * moveSpeed * Time.deltaTime));
     }
 
-    public void OnTriggerEnter2D(Collider2D player)
-    {
-        if(player.gameObject.tag == "Collider1" )
-        {
-            StartCoroutine(attack());
-        }
-        else if(player.gameObject.tag == "Collider2")
-        {
-            StartCoroutine(attack());
-        }
-    }
-
-    public void OnTriggerExit2D(Collider2D player)
-    {
-        if (player.gameObject.tag == "Collider1")
-        {
-            touch1 = false;
-        }
-        else if (player.gameObject.tag == "Collider2")
-        {
-            touch2 = false;
-        }
-    }
-
-
-    IEnumerator attack()
-    {
-        yield return new WaitForSeconds(attackTime);
-        if(touch1 == true)
-        {
-            yield return new WaitForSeconds(boostTime);
-            p1.lives -= 1;
-            p1.speed = 180;
-        }
-        else if(touch2 == true)
-        {
-            yield return new WaitForSeconds(boostTime);
-            p2.lives -= 1;
-            p2.speed = 180;
-        }
-    }
+    
 }
