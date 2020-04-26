@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Analytics;
 
 public class Pickup : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class Pickup : MonoBehaviour
     public AccelerationP2 B;
     public int timeForPickup;
     public bool picked = false , pickedB = false;
+    public AnalyticsEventTracker AnalyticsEvent;
+    
 
     void Awake()
     {
@@ -37,6 +40,7 @@ public class Pickup : MonoBehaviour
             Debug.Log("player 1 Picked up");
             A.speed = 150;
             StartCoroutine(pickup());
+            Analytics.CustomEvent("Player 1 pick up");
             
         }
         else if(col.gameObject.tag == "Collision2")
@@ -47,7 +51,7 @@ public class Pickup : MonoBehaviour
             Debug.Log("player 2 Picked up");
             B.speed = 150;
             StartCoroutine(pickup());
-
+            Analytics.CustomEvent("Player 2 pick up");
         }
     }
 
@@ -73,4 +77,9 @@ public class Pickup : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+
+
+
+
 }

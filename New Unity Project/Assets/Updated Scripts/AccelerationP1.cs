@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Analytics;
 
 public class AccelerationP1 : MonoBehaviour
 {
@@ -18,12 +19,13 @@ public class AccelerationP1 : MonoBehaviour
     public UpdatedMonster2 m;
     public int lives;
     public Attack A;
+    
     // Start is called before the first frame update
 
 
     void Start()
     {
-
+        
         m = GameObject.FindGameObjectWithTag("Monster").GetComponent<UpdatedMonster2>();
         A = GameObject.FindGameObjectWithTag("Monster").GetComponentInChildren<Attack>();
         rb = GetComponent<Rigidbody2D>();
@@ -92,6 +94,7 @@ public class AccelerationP1 : MonoBehaviour
         rb.constraints = RigidbodyConstraints2D.FreezeRotation;//Alllows movement for the rigid body2d(Car)
     }
 
-    
+   
+
 }
 
