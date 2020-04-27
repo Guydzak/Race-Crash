@@ -51,6 +51,8 @@ public class ButtonScript : MonoBehaviour
         raceButton.SetActive(true);
         //display p2 colour text
         p2Text.SetActive(true);
+        //set P2 colour to current colour
+        GameObject.FindGameObjectWithTag("MaterialManager").GetComponent<MaterialManager>().player2Mat = GameObject.FindGameObjectWithTag("Chasis").GetComponent<MaterialController>().myColour;
     }
     public void Race()
     {
