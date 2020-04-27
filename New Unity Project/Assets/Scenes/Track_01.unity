@@ -878,6 +878,19 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2392037104183197851}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &335184691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 335184690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54da7592f58148240ba9c0bb4c6e265e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerText: {fileID: 0}
 --- !u!61 &335184692
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -918,8 +931,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Trigger:
     m_IsTriggerExpanded: 1
-    m_Type: 1
-    m_LifecycleEvent: 0
+    m_Type: 0
+    m_LifecycleEvent: 7
     m_ApplyRules: 1
     m_Rules:
       m_Rules:
@@ -4099,66 +4112,8 @@ MonoBehaviour:
     m_IsEventExpanded: 1
     m_StandardEventType: CustomEvent
     m_Parameters:
-      m_Parameters:
-      - m_RequirementType: 0
-        m_GroupID: 
-        m_Tooltip: 
-        m_Name: Player1 Pick Up
-        m_Value:
-          m_EditingCustomValue: 0
-          m_PopupIndex: 0
-          m_CustomValue: 
-          m_FixedType: 0
-          m_EnumType: 
-          m_EnumTypeIsCustomizable: 0
-          m_CanDisable: 0
-          m_PropertyType: 1
-          m_ValueType: System.Boolean
-          m_Value: True
-          m_Target:
-            m_Target: {fileID: 0}
-            m_Path: 
-            m_ValidTypeNames:
-            - System.Int32
-            - System.Boolean
-            - System.Decimal
-            - System.Double
-            - System.Single
-            - System.Int64
-            - System.Int16
-            - System.String
-            m_Type: System.Boolean
-            m_EnumType: 
-      - m_RequirementType: 0
-        m_GroupID: 
-        m_Tooltip: 
-        m_Name: NoPickUp P1
-        m_Value:
-          m_EditingCustomValue: 0
-          m_PopupIndex: 0
-          m_CustomValue: 
-          m_FixedType: 0
-          m_EnumType: 
-          m_EnumTypeIsCustomizable: 0
-          m_CanDisable: 0
-          m_PropertyType: 1
-          m_ValueType: System.Boolean
-          m_Value: True
-          m_Target:
-            m_Target: {fileID: 0}
-            m_Path: 
-            m_ValidTypeNames:
-            - System.Int32
-            - System.Boolean
-            - System.Decimal
-            - System.Double
-            - System.Single
-            - System.Int64
-            - System.Int16
-            - System.String
-            m_Type: System.Boolean
-            m_EnumType: 
-    m_Name: PickUpsP1
+      m_Parameters: []
+    m_Name: 
 --- !u!114 &1497060368
 MonoBehaviour:
   m_ObjectHideFlags: 0

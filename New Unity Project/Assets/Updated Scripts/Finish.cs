@@ -9,8 +9,9 @@ public class Finish : MonoBehaviour
 {
     public Text T;
     public AnalyticsEventTracker CustomEvent;
-    
-    
+   
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +19,7 @@ public class Finish : MonoBehaviour
             T.text = "Player 1 Wins";
         if (PlayerPrefs.GetInt("Win") == 2)
             T.text = "Player 2 Wins";
+        
     }
 
     // Update is called once per frame
@@ -28,17 +30,21 @@ public class Finish : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D col)
     {
-        if(col.gameObject.tag == "Player1")
+        AnalyticsEvent.Custom("Race finished",new Dictionary<string, object>
+        {
+            {"winner", col.gameObject.tag },
+            {"finish", Time.timeSinceLevelLoad }
+        });
+        if (col.gameObject.tag == "Player1")
         {
             PlayerPrefs.SetInt("Win", 1);
             SceneManager.LoadScene("UpdatedFinish");
-            Analytics.CustomEvent("Player 1 Wins");
+            
         }
         else if(col.gameObject.tag == "Player2")
         {
             PlayerPrefs.SetInt("Win", 2);
             SceneManager.LoadScene("UpdatedFinish");
-            Analytics.CustomEvent("Player 2 Wins");
         }
     }
 }
