@@ -8,7 +8,8 @@ using UnityEngine.Analytics;
 public class Finish : MonoBehaviour
 {
     public Text T;
-   
+    public int WinCountP1;
+    public int WinCountP2;
    
 
 
@@ -32,19 +33,26 @@ public class Finish : MonoBehaviour
     {
         AnalyticsEvent.Custom("Race finished",new Dictionary<string, object>
         {
-            {"winner", col.gameObject.tag },
-            {"finish", Time.timeSinceLevelLoad }
+            {"winner", col.gameObject.tag},
+            {"finish", Time.timeSinceLevelLoad},
+            {"Player 1 Win Count", WinCountP1},
+            {"Player 2 Win Count", WinCountP2}
         });
         if (col.gameObject.tag == "Player1")
         {
             PlayerPrefs.SetInt("Win", 1);
+            WinCountP1 += 1;
             SceneManager.LoadScene("UpdatedFinish");
             
         }
         else if(col.gameObject.tag == "Player2")
         {
             PlayerPrefs.SetInt("Win", 2);
+            WinCountP2 += 1;
             SceneManager.LoadScene("UpdatedFinish");
         }
+
+        
+     
     }
 }

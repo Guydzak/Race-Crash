@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Analytics;
 
 public class Obstacles : MonoBehaviour
 {
@@ -19,6 +20,8 @@ public class Obstacles : MonoBehaviour
     public AudioClip almostThere;
     public AudioClip closeOne;
     public float slowAmount;
+    public int BoundaryP1;
+    public int BoundaryP2;
 
 
     // Start is called before the first frame update
@@ -42,9 +45,14 @@ public class Obstacles : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        
+        AnalyticsEvent.Custom("Boundary Hit", new Dictionary<string, object>
+        {
+           {"Player 1 Obstacle Hit", BoundaryP1},
+           {"Player 2 Obstacle Hit", BoundaryP2}
+        });
         if (col.gameObject.tag == "Collision1") // AND Player1 y ix greater than player2 y
         {
+            BoundaryP1 += 1; 
             hit1 = true;
             m.t1 = true;
             //source.PlayOneShot(playerOneBush, 1f);
@@ -63,6 +71,7 @@ public class Obstacles : MonoBehaviour
         }
         else if (col.gameObject.tag == "Collision2")
         {
+            BoundaryP2 += 1;
             hit2 = true;
             m.t2 = true;
             //source.PlayOneShot(almostThere, 1f);
