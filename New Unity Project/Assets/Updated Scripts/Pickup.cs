@@ -10,7 +10,7 @@ public class Pickup : MonoBehaviour
     public AccelerationP2 B;
     public int timeForPickup;
     public bool picked = false , pickedB = false;
-    public AnalyticsEventTracker AnalyticsEvent;
+    
     
 
     void Awake()
@@ -32,6 +32,11 @@ public class Pickup : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D col)
     {
+        AnalyticsEvent.Custom("Picked Up Collected", new Dictionary<string, object>
+        {
+            {"player", col.gameObject.tag }
+        });       
+
         if(col.gameObject.tag == "Collision1")
         {
             PlayerPrefs.SetInt("P1", 1);
@@ -40,7 +45,7 @@ public class Pickup : MonoBehaviour
             Debug.Log("player 1 Picked up");
             A.speed = 150;
             StartCoroutine(pickup1());
-            Analytics.CustomEvent("Player 1 pick up");
+            
             
         }
         else if(col.gameObject.tag == "Collision2")
@@ -51,7 +56,7 @@ public class Pickup : MonoBehaviour
             Debug.Log("player 2 Picked up");
             B.speed = 150;
             StartCoroutine(pickup2());
-            Analytics.CustomEvent("Player 2 pick up");
+            
         }
     }
 

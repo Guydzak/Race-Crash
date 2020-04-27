@@ -8,7 +8,7 @@ using UnityEngine.Analytics;
 public class Finish : MonoBehaviour
 {
     public Text T;
-    public AnalyticsEventTracker CustomEvent;
+   
    
 
 
