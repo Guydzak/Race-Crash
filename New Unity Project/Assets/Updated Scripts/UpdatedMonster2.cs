@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class UpdatedMonster2 : MonoBehaviour
 {
-    public bool touch = false;
+    public bool t1 = false;
+    public bool t2 = false;
     public bool touch1 = false;
     public bool touch2 = false;
 

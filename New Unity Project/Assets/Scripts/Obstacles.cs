@@ -7,7 +7,8 @@ public class Obstacles : MonoBehaviour
 
     protected Rigidbody2D rb2d;
     Rigidbody2D P1, P2;
-    public bool hit = false;
+    public bool hit1 = false;
+    public bool hit2 = false;
     public AccelerationP1 p1;
     public AccelerationP2 p2;
     public UpdatedMonster2 m;
@@ -41,16 +42,18 @@ public class Obstacles : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        hit = true;
+        
         if (col.gameObject.tag == "Collision1") // AND Player1 y ix greater than player2 y
         {
+            hit1 = true;
+            m.t1 = true;
             //source.PlayOneShot(playerOneBush, 1f);
             //source.PlayOneShot(almostThere, 1f);
             Debug.Log("P1 Closing in");
             p1.speed = 50;
             if (m.dp2 > m.dp1)
             {
-                m.touch = true;
+                
                 m.moveSpeed = m.chaseSpeed;
                 //m.transform.position = new Vector3(m.transform.position.x, P1.transform.position.y + 7f, P1.transform.position.z);
                 //m.source.PlayOneShot(m.Roar, 0.2f);
@@ -60,13 +63,15 @@ public class Obstacles : MonoBehaviour
         }
         else if (col.gameObject.tag == "Collision2")
         {
+            hit2 = true;
+            m.t2 = true;
             //source.PlayOneShot(almostThere, 1f);
             //source.PlayOneShot(bush, 0.3f);
             Debug.Log("P2 Closing in");
             p2.speed = slowAmount;
             if (m.dp1 > m.dp2)
             {
-                m.touch = true;
+               
                 m.moveSpeed = m.chaseSpeed;
                 //m.transform.position = new Vector3(m.transform.position.x, P2.transform.position.y + 7f, P2.transform.position.z);
                 //m.source.PlayOneShot(m.Roar, 0.2f);
@@ -79,16 +84,18 @@ public class Obstacles : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D col)
     {
-        hit = false;
+        
         if (col.gameObject.tag == "Collision1")
         {
-            m.touch = false;
+            hit1 = false;
+            m.t1 = false;
             m.moveSpeed = m.defSpeed;
             p1.speed = p1.defSpeed;
         }
         else if (col.gameObject.tag == "Collision2")
         {
-            m.touch = false;
+            hit2 = false;
+            m.t2 = false;
             m.moveSpeed = m.defSpeed;
             p2.speed = p2.defSpeed; ;
         }

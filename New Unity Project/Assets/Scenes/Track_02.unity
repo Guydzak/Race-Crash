@@ -3513,6 +3513,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock1_grup3
       objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: f20a15ee7150fd647af421022dde4d44, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: f20a15ee7150fd647af421022dde4d44, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.6
@@ -3836,7 +3840,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1159302656}
   m_LocalRotation: {x: 0, y: 0.7071068, z: -0.7071068, w: 0}
-  m_LocalPosition: {x: -2.7, y: -1.62, z: 0}
+  m_LocalPosition: {x: 0.67, y: -3.44, z: -0}
   m_LocalScale: {x: 0.3415, y: 0.34150025, z: 0.34150028}
   m_Children:
   - {fileID: 1389926538}

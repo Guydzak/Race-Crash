@@ -57,7 +57,7 @@ public class AccelerationP2 : MonoBehaviour
             {
                 speed = 150;
             }
-            else if (PlayerPrefs.GetInt("P2") == 0 && m.touch == false && A.touch2 == false)
+            else if (PlayerPrefs.GetInt("P2") == 0 && m.t2 == false && A.touch2 == false)
             {
                 speed = 100;
             }
@@ -86,7 +86,7 @@ public class AccelerationP2 : MonoBehaviour
         {
             speed = 150;
         }
-        else if (PlayerPrefs.GetInt("P2") == 0 && m.touch == false && A.touch2 == false)
+        else if (PlayerPrefs.GetInt("P2") == 0 && m.t2 == false && A.touch2 == false)
         {
             speed = 100;
         }

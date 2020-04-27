@@ -9,7 +9,7 @@ public class AccelerationP1 : MonoBehaviour
     float rotation;
     float x;
     float y;
-    public float speed = 1;
+    public float speed;
     public float turnspeed = 1;
     public float defSpeed;
     public int StartTime;
@@ -19,10 +19,13 @@ public class AccelerationP1 : MonoBehaviour
     public UpdatedMonster2 m;
     public int lives;
     public Attack A;
-    
+
+
     // Start is called before the first frame update
 
 
+  
+    
     void Start()
     {
         
@@ -55,7 +58,7 @@ public class AccelerationP1 : MonoBehaviour
             {
                 speed = 150;
             }
-            else if (PlayerPrefs.GetInt("P1") == 0 && m.touch1 == false && A.touch1 == false)
+            else if (PlayerPrefs.GetInt("P1") == 0 && m.t1 == false && A.touch1 == false)
             {
                 speed = 100;
             }
@@ -84,7 +87,7 @@ public class AccelerationP1 : MonoBehaviour
         {
             speed = 150;
         }
-        else if (PlayerPrefs.GetInt("P1") == 0 && m.touch == false && A.touch1 == false)
+        else if (PlayerPrefs.GetInt("P1") == 0 && m.t1 == false && A.touch1 == false)
         {
             speed = 100;
         }
