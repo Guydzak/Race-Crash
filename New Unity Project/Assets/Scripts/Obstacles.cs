@@ -46,8 +46,8 @@ public class Obstacles : MonoBehaviour
         {
             //source.PlayOneShot(playerOneBush, 1f);
             //source.PlayOneShot(almostThere, 1f);
-            Debug.Log("Closing in");
-            p1.speed = slowAmount;
+            Debug.Log("P1 Closing in");
+            p1.speed = 50;
             if (m.dp2 > m.dp1)
             {
                 m.touch = true;
@@ -62,7 +62,7 @@ public class Obstacles : MonoBehaviour
         {
             //source.PlayOneShot(almostThere, 1f);
             //source.PlayOneShot(bush, 0.3f);
-            Debug.Log("Closing in");
+            Debug.Log("P2 Closing in");
             p2.speed = slowAmount;
             if (m.dp1 > m.dp2)
             {

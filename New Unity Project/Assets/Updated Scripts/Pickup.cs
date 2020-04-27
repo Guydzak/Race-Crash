@@ -39,7 +39,7 @@ public class Pickup : MonoBehaviour
             picked = true;
             Debug.Log("player 1 Picked up");
             A.speed = 150;
-            StartCoroutine(pickup());
+            StartCoroutine(pickup1());
             Analytics.CustomEvent("Player 1 pick up");
             
         }
@@ -50,12 +50,12 @@ public class Pickup : MonoBehaviour
             pickedB = true;
             Debug.Log("player 2 Picked up");
             B.speed = 150;
-            StartCoroutine(pickup());
+            StartCoroutine(pickup2());
             Analytics.CustomEvent("Player 2 pick up");
         }
     }
 
-    IEnumerator pickup()
+    IEnumerator pickup1()
     {
 
         if (picked == true)
@@ -67,7 +67,21 @@ public class Pickup : MonoBehaviour
             Debug.Log(" player 1 speed down");
             Destroy(gameObject);
         }
-        else if(pickedB == true)
+        if(pickedB == true)
+        {
+            yield return new WaitForSeconds(timeForPickup);
+            PlayerPrefs.SetInt("P2", 0);
+            B.speed = 100;
+            picked = false;
+            Debug.Log("player 2 speed down");
+            Destroy(gameObject);
+        }
+    }
+    IEnumerator pickup2()
+    {
+
+        
+        if (pickedB == true)
         {
             yield return new WaitForSeconds(timeForPickup);
             PlayerPrefs.SetInt("P2", 0);
