@@ -18,7 +18,7 @@ public class UI : MonoBehaviour
 
     public void onclickplay()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("ColourSelection");
     }
     public void onclickexit()
     {
